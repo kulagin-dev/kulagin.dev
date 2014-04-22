@@ -1,0 +1,26 @@
+doctype 5
+
+html
+  head
+    meta[name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"]
+    link[href="http://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto+Condensed:400,700" rel="stylesheet" type="text/css"]
+    link[href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"]
+
+    title = "vanburg.ru :: #{current_page.data.title}"
+    == stylesheet_link_tag 'application'
+
+  body[class=page_classes]
+
+    == partial 'layouts/header'
+
+    .container
+      == partial 'layouts/intro'
+      == partial 'layouts/the_way'
+      == partial 'layouts/works'
+
+    == yield
+
+    == partial 'layouts/footer'
+
+    /.container[style="background: #999; height: 20px; margin-top:30px;"]
+

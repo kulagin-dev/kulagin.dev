@@ -1,0 +1,8 @@
+footer {
+  background: $dark-red-color;
+  margin-top: $line-height-computed * 4;
+  @include condensed-font();
+  color: #fff;
+  text-align: center;
+  line-height: 2;
+}

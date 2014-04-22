@@ -1,0 +1,7 @@
+.the-way {
+  @extend .vb-default-width;
+
+  ul {
+    @extend .vb-list, .vb-vertical-margins;
+  }
+}

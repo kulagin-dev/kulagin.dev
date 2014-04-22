@@ -1,0 +1,36 @@
+// TODO: gradient
+
+header {
+  @extend .vb-condensed-headers;
+
+  .dark-red-sripe {
+    background: $dark-red-color;
+    height: $line-height-computed * 5;
+    position: relative;
+    @include background-image(linear-gradient($dark-red-color 40%, rgba(0,0,0,.2)));
+  }
+  .avatar {
+    position: absolute;
+    top: $line-height-computed;
+    left: 0;
+    right: 0;
+  }
+  .red-stripe {
+    background: $red-color;
+    font-size: 25px;
+    line-height: 1;
+    padding: {
+      top: $line-height-computed * 3;
+      bottom: $line-height-computed;
+    }
+  }
+  .blue-stripe {
+    background: $blue-color;
+    font-size: 17px;
+    line-height: $line-height-computed * 2;
+  }
+}
+
+//font-family: 'Lora', serif;
+//font-family: 'PT Sans', sans-serif;
+//font-family: 'Roboto Condensed', sans-serif;

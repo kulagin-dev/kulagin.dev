@@ -1,0 +1,61 @@
+@include for-xs {
+  body { font-size: $font-size-xs; }
+  h1 { font-size: 180%; }
+  h2 { font-size: 160%; text-align: center; }
+}
+@include for-sm {
+  body { font-size: $font-size-sm; }
+}
+@include for-md {
+  body { font-size: $font-size-md; }
+}
+@include for-lg {
+  body { font-size: $font-size-lg; }
+}
+
+.vb-default-width {
+  @extend .col-lg-8, .col-lg-push-2;
+  @extend .col-md-10, .col-md-push-1;
+}
+
+.vb-vertical-margins {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  @extend .vb-vertical-margins-xs;
+}
+
+.vb-vertical-margins-xs {
+  @media (max-width: $screen-xs-min) {
+    margin-top: 8px;
+    margin-bottom: 4px;
+  }
+}
+
+h1, h2, ul {
+  @extend .vb-vertical-margins;
+}
+
+h1, h2 {
+  @include condensed-font($color: inherit);
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-weight:normal;
+}
+
+.avatar {
+  $borders: 3px * 2;
+  height: 119px + $borders;
+  width: 119px + $borders;
+  margin: 0 auto;
+  border: $borders/2 solid white;
+  border-radius: 50%;
+  background-size: 100%;
+  background: inline-image('avatar.png');
+  -webkit-filter: drop-shadow(0px 5px 8px rgba(0,0,0,.75));
+  filter: drop-shadow(0px 5px 8px rgba(0,0,0,.75));
+}
