@@ -56,7 +56,3 @@ activate :deploy do |deploy|
   deploy.path = 'public'
   deploy.build_before = true
 end
-
-# CUSTOM SETTINGS
-set :first_release_date, Time.parse('2014-04-22')
-set :days_released, (Time.now - config[:first_release_date]).to_i / (24 * 60 * 60)
