@@ -1,3 +1,11 @@
+// @source - [@Stephn-R](https://github.com/sass/sass/issues/1395#issuecomment-57483844)
+// @description converts 1 or more characters into a unicode
+// @markup {scss}
+// unicode_encode("e655"); // "\e655"
+@function unicode_encode($str) {
+  @return unquote("\"")+unquote(str-insert($str, "\\", 1))+unquote("\"")
+}
+
 @mixin for-xs {
   @media (max-width: $screen-xs-min) {
     @content
@@ -46,7 +54,7 @@
 
   li::before {
     font-family: 'FontAwesome';
-    content: "\f#{$icon}";
+    content: unicode_encode("f#{$icon}");
     color: $red-color;
     float: left;
     margin-left: -(fa-list-left-margin($font-size-base));
