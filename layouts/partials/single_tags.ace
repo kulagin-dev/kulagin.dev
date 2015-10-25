@@ -1,0 +1,6 @@
+{{ if isset . "tags" }}
+  {{ range .tags }}
+    a href="/tags/{{ . | urlize}}"
+      span.label.label-default.label-pill {{.}}
+  {{ end }}
+{{ end }}

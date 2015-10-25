@@ -18,5 +18,16 @@
 .DS_Store
 
 /bower_components
+/node_modules
+
+/stage
 /public
-/archetypes
+
+# Do not track links to bower components
+/assets/twbs
+
+# Do not track compiled assets
+/static/assets/css
+/static/assets/js
+
+/themes

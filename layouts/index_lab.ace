@@ -1,0 +1,46 @@
+{{ partial "header" . }}
+
+.container
+  .row
+    .col-xs-12
+      {{partial "job_banner" .}}
+
+.container
+  .row
+    .col-xs-9
+      h2 Home page content
+
+    .col-xs-3
+      h2 Content menu
+
+
+.container.gr
+  .row
+    .col-xs-1 1
+    .col-xs-1 1
+    .col-xs-1 1
+    .col-xs-1 1
+    .col-xs-1 1
+    .col-xs-1 1
+    .col-xs-1 1
+    .col-xs-1 1
+    .col-xs-1 1
+    .col-xs-1 1
+    .col-xs-1 1
+    .col-xs-1 1
+
+.container.gr
+  .row
+    .col-xs-12.col-md-6.col-lg-4.col-xl-3.m-b
+      img src="/img/portfolio/abc-logistic.png"
+    .col-xs-12.col-md-6.col-lg-4.col-xl-3.m-b
+      img src="/img/portfolio/abc-logistic.png"
+    .col-xs-12.col-md-6.col-lg-4.col-xl-3.m-b
+      img src="/img/portfolio/abc-logistic.png"
+    .col-xs-12.col-md-6.col-lg-4.col-xl-3.m-b
+      img src="/img/portfolio/abc-logistic.png"
+
+
+.container
+  .row
+    button.btn.btn-primary.btn-large.hidden-sm-up XXX

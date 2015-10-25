@@ -1,19 +1,32 @@
 {
-  "name": "vb2",
-  "version": "0.0.0",
+  "name": "vanburg-ru-assets",
+  "version": "0.1.0",
   "homepage": "https://github.com/vanburg/ru",
   "authors": [
-    "Ivan Byurganovskiy <edjbox@gmail.com>"
+    "Ivan Byurganovskiy <me@vanburg.ru>"
   ],
+  "private": true,
   "license": "MIT",
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "dependencies": {
-    "bootstrap": "4.0.0-alpha"
+    "js-cookie": "~2.0.3",
+    "bootstrap": "git@github.com:twbs/bootstrap.git#v4-dev",
+    "material-design-icons": "~2.0.0",
+    "material-design-lite": "~1.0.6"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "js/dist/util.js",
+        "js/dist/collapse.js"
+      ]
+    },
+    "jquery": {
+      "main": []
+    }
   }
 }

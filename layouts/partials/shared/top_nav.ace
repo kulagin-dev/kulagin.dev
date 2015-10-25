@@ -1,0 +1,11 @@
+nav.top-nav.navbar-fixed-top
+  a.navbar-brand href=""
+    {{ partial "shared/logo" }}
+  button.navbar-toggler.hidden-sm-up.pull-right type="button" data-toggle="collapse" data-target="#topMenu"
+    | &#9776; Menu
+  #topMenu.collapse.pull-right.navbar-toggleable-xs
+    ul.nav.navbar-nav
+      li.nav-item
+        a.nav-link Home
+      li.nav-item.active
+        a.nav-link Books

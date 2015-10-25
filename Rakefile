@@ -1,49 +1,94 @@
-task deploy: %w[deploy:upload]
+# Incapsulate paths-related data
+class Paths
+  def initialize
+    @app_name                   = 'vbru_hugo'
+    @deploy_root                = '/hosting/www/vbru'
+    @deployed_release_link_name = 'current'
+    @releases_dir_name          = 'releases'
+    @build_dir                  = 'build'
 
-namespace :deploy do
-  class Paths
-    def initialize
-      @app_name                   = 'vbru_hugo'
-      @deploy_root                = '/hosting/www/vbru'
-      @deployed_release_link_name = 'current'
-      @releases_dir_name          = 'releases'
-      @build_dir                  = 'build'
+    @release_timestamp = Time.now.strftime('%Y-%m-%d-%H-%M-%S')
+  end
 
-      @release_timestamp = Time.now.strftime('%Y-%m-%d-%H-%M-%S')
-    end
+  attr_reader :release_timestamp, :app_name, :deploy_root,
+              :deployed_release_link_name, :releases_dir_name, :build_dir
 
-    attr_reader :release_timestamp, :app_name, :deploy_root,
-                :deployed_release_link_name, :releases_dir_name, :build_dir
+  def deploy_to
+    '%s/%s' % [deploy_root, app_name]
+  end
 
-    def deploy_to
-      '%s/%s' % [deploy_root, app_name]
-    end
+  def deployed_release_link_path
+    '%s/%s' % [deploy_to, deployed_release_link_name]
+  end
 
-    def deployed_release_link_path
-      '%s/%s' % [deploy_to, deployed_release_link_name]
-    end
+  def releases_path
+    '%s/%s' % [deploy_to, releases_dir_name]
+  end
 
-    def releases_path
-      '%s/%s' % [deploy_to, releases_dir_name]
-    end
+  # releases/2015..
+  def current_release_dir_name
+    '%s/%s' % [releases_dir_name, release_timestamp]
+  end
 
-    # releases/2015..
-    def current_release_dir_name
-      '%s/%s' % [releases_dir_name, release_timestamp]
-    end
+  # /hosting/.../releases/2015
+  def current_release_dir_path
+    '%s/%s' % [deploy_to, current_release_dir_name]
+  end
 
-    # /hosting/.../releases/2015
-    def current_release_dir_path
-      '%s/%s' % [deploy_to, current_release_dir_name]
-    end
+  # This dir will be renamed after upload
+  # /hosting/releases/build
+  def remote_build_dir_path
+    '%s/%s' %[releases_path, build_dir]
+  end
+end
 
-    # This dir will be renamed after upload
-    # /hosting/releases/build
-    def remote_build_dir_path
-      '%s/%s' %[releases_path, build_dir]
+#
+# BUILD WORKFLOW
+#
+
+# Before brunch build, after hugo done
+# /build/assets <- normal assets from `static` dir
+# After brunch build
+# /build/assets <- overwritten with minified assets (CSS|JS only)
+
+# Pretend `build` is a task
+desc "Build only"
+task build: %w[build:run]
+
+namespace :build do
+  paths = Paths.new
+
+  task run: 'build:clean' do
+    run_locally do
+      execute :hugo, '--destination', paths.build_dir
+
+      # Brunch compilation. Setting env var using `with`.
+      # See brunch config for details
+      with brunch_env: :production do
+        execute :brunch, 'build'
+      end
     end
   end
 
+  desc "Clean build"
+  task :clean do
+    run_locally do
+      if test "[ -d #{paths.build_dir} ]"
+        execute :rm, '-Rf', paths.build_dir
+      end
+    end
+  end
+end
+
+#
+# DEPLOY
+#
+
+# Pretend `deploy` is a task
+desc "Build and deploy"
+task deploy: %w[deploy:upload]
+
+namespace :deploy do
   USER              = 'vbru'
   HOST              = 'srv'
   KEEP_RELEASES_NUM = 10
@@ -61,20 +106,8 @@ namespace :deploy do
   host  = SSHKit::Host.new('%s@%s' % [USER, HOST])
   paths = Paths.new
 
-  desc "Build"
-  task :build do
-    run_locally do
-      if test "[ -d #{paths.build_dir} ]"
-        execute :rm, '-Rf', paths.build_dir
-      end
-
-      execute :hugo, '--destination', paths.build_dir
-    end
-  end
-
   # TODO: DROP DIR ON ERROR (HOOK)
-  desc "Upload"
-  task :upload => 'deploy:build' do
+  task :upload => 'build' do
     on host do
       # FOR TESTING ONLY: DROP DEPLOY DIR
       # if test "[ -d  #{paths.deploy_to} ]"

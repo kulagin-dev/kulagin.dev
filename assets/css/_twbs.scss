@@ -1,0 +1,36 @@
+// Though we can simplify @import paths a bit with sass-brunch`s
+// options.includePaths: ['bower_components']` and skip `../../bower_components/` part
+// but this makes BS source navigation more complex. Sticking with relative paths
+
+// Core variables and mixins
+@import "../../bower_components/bootstrap/scss/variables";
+@import "../../bower_components/bootstrap/scss/mixins";
+
+// // Reset and dependencies
+@import "../../bower_components/bootstrap/scss/normalize";
+
+// Core CSS
+@import "../../bower_components/bootstrap/scss/reboot";
+@import "../../bower_components/bootstrap/scss/type";
+@import "../../bower_components/bootstrap/scss/images";
+@import "../../bower_components/bootstrap/scss/code";
+@import "../../bower_components/bootstrap/scss/grid";
+@import "../../bower_components/bootstrap/scss/tables";
+@import "../../bower_components/bootstrap/scss/buttons";
+
+// // Components
+
+@import "../../bower_components/bootstrap/scss/animation";
+@import "../../bower_components/bootstrap/scss/nav";
+@import "../../bower_components/bootstrap/scss/navbar";
+//@import "../../bower_components/bootstrap/scss/labels";
+
+// Components w/ JavaScript
+
+
+
+
+// Utility classes
+@import "../../bower_components/bootstrap/scss/utilities";
+@import "../../bower_components/bootstrap/scss/utilities-spacing";
+@import "../../bower_components/bootstrap/scss/utilities-responsive";

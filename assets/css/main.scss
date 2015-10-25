@@ -1,0 +1,144 @@
+$logo-side-length: 2.5rem;
+// 40px
+$top-nav-bg-color: #4A6662;
+$red-color: #C32F34;
+$headings-color: $red-color;
+
+@import "twbs-override";
+@import "twbs";
+
+/*
+
+--------------------------------------------------------------------------------
+
+*/
+
+@mixin condensed-font($weight: 700) {
+  font: {
+    weight: $weight;
+    family: "HelveticaNeue-CondensedBold", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
+
+.vb-condensed-headers {
+  @include condensed-font;
+  text-transform: uppercase;
+  text-align: center;
+  color: $headings-color;
+}
+
+.vb-condensed-text {
+  @include condensed-font($weight: 400);
+}
+
+.top-nav {
+  @extend .navbar;
+  @extend .navbar-dark;
+  @extend .navbar-full;
+  @extend .bg-inverse;
+  @extend .container-fluid;
+  //@extend .navbar-sticky-top;
+  @include condensed-font;
+
+  // override .bg-inverse
+  background: $top-nav-bg-color;
+
+  // Let SVG rule the size
+  .navbar-brand {
+    padding: 0;
+    line-height: 1;
+
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .nav-item a {
+    line-height: $logo-side-length - $navbar-padding-vertical * 2;
+  }
+}
+
+.xxx {
+  width: 100%;
+
+  &__zzz {
+    width: 20%;
+
+    &--temp {
+      width: 10%;
+    }
+  }
+
+                          СВЕРСТАТЬ НЕ МЕНЯЯ НИ СТРОЧКИ? ТОЛЬКО НА УРОВНЕ ХТМЛ?
+}
+
+.home-about-wrapper {
+  background: #ebebeb;
+  @include condensed-font;
+  @extend .p-l, .p-r, .p-t;
+}
+
+.home-about {
+  @extend .container;
+
+  .avatar-wrapper, .about-wrapper {
+    @extend .m-b;
+    width: 50%;
+  }
+
+  .about-wrapper {
+    text-align: center;
+  }
+
+
+  .avatar {
+    width: 119px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .avatar-wrapper {
+      float: left;
+    }
+
+    .about-wrapper {
+      //@extend .p-l;
+      float: left;
+      text-align: left;
+    }
+
+    .avatar {
+      margin: 0;
+    }
+  }
+
+
+}
+
+
+.job-banner {
+  @extend .container;
+  @extend .p-t;
+  @extend .p-b;
+  @include condensed-font;
+
+  background: $red-color;
+
+  .banner-text {
+    @extend .col-xs-9;
+    color: white;
+  }
+
+  .banner-buttons {
+    @extend .col-xs-3;
+  }
+
+  .btn-hire, .btn-dismiss {
+    @extend .btn, .btn-sm, .btn-block;
+    @include button-variant($red-color, #FFF, #FFF);
+  }
+}

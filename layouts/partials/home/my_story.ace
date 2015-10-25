@@ -1,0 +1,41 @@
+a name="story"
+.container
+  .row
+    .story
+      h1 My story
+
+      h2 The beginning
+      p I began to develop websites in 1998 year. It's all began with well-known PHPNuke CMS. While hacking it around and learning PHP, I began to understand that PHPNuke is based on very ugly spagetti code, and developers used all the bad programming habbits writing it. Anyway, thanks to PHPNuke, I learned PHP well, but began to look for something more elegant.
+
+      h2 DotNet Developing
+      p Thus, in 2003, C# and ASP.Net came into my life. I was very excited with C# and till now think it's one of the beautiful languages with strong toolkit, provided by .Net Framework and supported by amazing MS Visual Studio. To be honest, I think MS have only three products what world is really need to have: Windows 7, .Net, DirectX.
+      p While learning C#, I wrote few desktop applications, and one simple site with MySQL connection. The more I develop on .Net, the more I tired to write all this huge amount of code need to do simple tasks. Even MSVS & Resharper didn't help much.
+      p This time my decision was to finalize desktop and Windows development, and get back to more interesting for me web backend development using PHP. At the same time I migrated to Linux from Windows, cause PHP developing on Linux is more natural.
+
+      h2 PHP Again
+      p After returning to web development, as any developer with few years of experience, I decided to develop my own framework, using all I knew, to make something handy for me in everyday work, and to consolidate all my knowledge. Inspired by great .Net libraries and many books I read till then, I began to work, and the final result was almost completely satisfy me - it had a simple ORM, routing system, and built a lot like MVC pattern. I've made two sites using it, but began to understand, that the whole architecture could be better: I had to wrote too many things to make it work, and should be a way to avoid it. And in that moment I stepped to the next level: I began to read others code.
+      p In those days a boom of PHP frameworks happened: Zend, Codeiniter, Cakephp, an AST.net-style Qcodo & Prado. Looking at how they solves my framework's problems, a decided what my experiment with own framework was finished. It helped my a lot with understanding of how to design systems's architecture, how to make system more decoupled etc. Now I had to choose my favorite framework for every-day using, and learn it completely.
+
+      h2 Kohana framework
+      p After some experiments (and one site done on) with Qcodo, I've noticed dejavu: this is too familiar with ASP.net - again to much code, and actually this is not a PHP style of coding. And then, in 2008, Kohana (2.1 as I remember) came into my life...
+      p This was it! Simple, elegant, great organized and designed, with excellent ORM... I loved it, and untill I become familliar with RoR and Ruby, I used only Kohana in my work.
+
+      h2 TDD: Brain revolution
+      p At those time the TDD & Agile concept became more and more popular, and this was my next step to another level. It was not so easy to completely change the way I used to work, and it took about a year to make it a habbit - write tests before code. But TDD, especially in complex applications, and if you do it right, really saves time as I noticed later.
+
+      h2 The great RoR migration
+      p Using Kohana, I often read that it's very basic PHP port of something called Ruby on Rails, written on mysterious Ruby language. Thus, finally, I decided to take a look at RoR, as if Kohana is so great, maybe RoR is something fantastic...
+      p And so in 2011 I find a RoR video course at Lynda.com, and was excited how great RoR is. My dream became true: I can write so little code (thanks to Ruby) to do so amazing things.
+      p I really regret I didn't met RoR and Ruby earlier, and that regret led to another experience level: since then, I'm trying to be on the edge of backed development technologies, to not to miss something really interesting and making my life simpler.
+
+      h2 Spec the ruby
+      p After RoR inspiration and digging in its code, I've realised what I should learn Ruby language itself first, to read and understand what actually happening there. Since by that time I was a huge fan of TDD, I've started to search a tool for testing (and documenting my Ruby research at the same time), and find Rspec. That was another shock, comparable with RoR itself. I've fell in love with the expressiveness of Rspec (again, thanks to Ruby), and till today I can't imagine my work without it.
+      p After few months of learning Ruby and RoR through Rspec & Capybara, I decided to forget about PHP, and completely switch to RoR, like many others PHP developers.
+
+      h2 Nirvana
+      p In the beginning of 2012 I felt I'm ready for my first RoR commercial project. And so was made quite simple abc-logistik.ru, and later pelesend.com, and higginsmd420.com. The internal complexity of applications grows in the same order.
+      p It's been a long time since I've switched to Ruby and it's ecosystem, but still, every day I'm using it, I'm learning beautiful things, interesting ways of solving problems, finding myself, finally, at home.
+
+      h2 Programming future
+      p As I mentioned before, I'm trying to learn every day, and the next steps in my roadmap is the learning of becoming more and more mature and popular Go language, and I think that it will be great to also learn Clojure (and ClojureScript, that I think is awesome replacement of Javascript). For the last, I have more academic interest, I had a little experience of using JVM, but that was a long time ago (I wrote simple app for my Siemens SL45).
+

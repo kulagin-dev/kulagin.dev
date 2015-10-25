@@ -1,0 +1,30 @@
+= doctype html
+html lang="{{.Site.LanguageCode}}"
+
+  {{ partial "shared/head" . }}
+
+  body
+
+    {{ partial "shared/top_nav" . }}
+
+    .home-about-wrapper
+      .home-about
+        .avatar-wrapper
+          img.avatar src="/assets/avatar.png"
+
+        .about-wrapper
+          p.about
+            | Hello! My name is Ivan, and I'am backend developer since 1998.
+              This site's primary purpose is to demonstrate my skills in different technologies,
+              especially in my current favorites: Ruby language, RoR and BDD.
+              Please <a href="#story">read my full story</a> to get the first impressions.
+
+    .job-banner
+      .row
+        .banner-text
+          | I'm currently looking for long&#8209;term&nbsp;job&nbsp;at&nbsp;odesk
+        .banner-buttons
+          a.btn-hire href="http://goo.gl/HWIYUQ" target="blank"
+            | Hire
+          a.btn-dismiss href="#"
+            | Dismiss
