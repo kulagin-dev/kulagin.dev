@@ -13,20 +13,10 @@
     "bower_components"
   ],
   "dependencies": {
-    "js-cookie": "~2.0.3",
-    "bootstrap": "git@github.com:twbs/bootstrap.git#v4-dev",
+    "js-cookie": "~2.0.3"
+  },
+  "devDependencies": {
     "material-design-icons": "~2.0.0",
     "material-design-lite": "~1.0.6"
-  },
-  "overrides": {
-    "bootstrap": {
-      "main": [
-        "js/dist/util.js",
-        "js/dist/collapse.js"
-      ]
-    },
-    "jquery": {
-      "main": []
-    }
   }
 }

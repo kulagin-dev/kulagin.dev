@@ -4,27 +4,20 @@ html lang="{{.Site.LanguageCode}}"
   {{ partial "shared/head" . }}
 
   body
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      {{ partial "shared/header" }}
 
-    {{ partial "shared/top_nav" . }}
+      main.mdl-layout__content
 
-    .home-about-wrapper
-      .home-about
-        .avatar-wrapper
-          img.avatar src="/assets/avatar.png"
+        {{ partial "home/intro" }}
+        {{ partial "shared/job_banner" }}
 
-        .about-wrapper
-          p.about
-            | Hello! My name is Ivan, and I'am backend developer since 1998.
-              This site's primary purpose is to demonstrate my skills in different technologies,
-              especially in my current favorites: Ruby language, RoR and BDD.
-              Please <a href="#story">read my full story</a> to get the first impressions.
+        // HOMEPAGE CONTENT
 
-    .job-banner
-      .row
-        .banner-text
-          | I'm currently looking for long&#8209;term&nbsp;job&nbsp;at&nbsp;odesk
-        .banner-buttons
-          a.btn-hire href="http://goo.gl/HWIYUQ" target="blank"
-            | Hire
-          a.btn-dismiss href="#"
-            | Dismiss
+        .vb-grid-content.mdl-grid
+          {{ partial "home/the_way" }}
+          {{ partial "home/my_story" }}
+
+        // END HOMEPAGE CONTENT
+
+        {{ partial "shared/footer" }}

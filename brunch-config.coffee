@@ -41,7 +41,7 @@ exports.config =
       joinTo:
         'main.js': 'assets/js/main.js'
         # Select required (and skip jquery) files using `overrides` in bower.js
-        'vendor.js': /^bower_components\/(bootstrap|js-cookie)/
+        'vendor.js': /^bower_components\/(js-cookie)/
 
   plugins:
     # See https://github.com/brunch/sass-brunch

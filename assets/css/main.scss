@@ -1,144 +1,75 @@
-$logo-side-length: 2.5rem;
-// 40px
-$top-nav-bg-color: #4A6662;
-$red-color: #C32F34;
-$headings-color: $red-color;
+$color-main: rgb(255,87,34);
+$grid-desktop-breakpoint: 840px;
 
-@import "twbs-override";
-@import "twbs";
+.mdl-navigation {
+  padding-top: 8px;
+}
 
-/*
+.mdl-navigation__link {
+  padding: 12px 16px;
+  line-height: 24px;
+}
 
---------------------------------------------------------------------------------
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+  display: flex;
+  align-items: center;
+}
 
-*/
-
-@mixin condensed-font($weight: 700) {
-  font: {
-    weight: $weight;
-    family: "HelveticaNeue-CondensedBold", "HelveticaNeueBoldCondensed", "HelveticaNeue-Bold-Condensed", "Helvetica Neue Bold Condensed", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// Showing top menu only when it should fit
+@media (max-width: $grid-desktop-breakpoint - 1) {
+  .vb-top-navigation--tablet-screen-and-larger {
+    display: none;
   }
 }
 
-.vb-condensed-headers {
-  @include condensed-font;
-  text-transform: uppercase;
-  text-align: center;
-  color: $headings-color;
+.vb-grid-full-width {
+  max-width: 960px;
 }
 
-.vb-condensed-text {
-  @include condensed-font($weight: 400);
+.vb-grid-content {
+  max-width: 760px;
 }
 
-.top-nav {
-  @extend .navbar;
-  @extend .navbar-dark;
-  @extend .navbar-full;
-  @extend .bg-inverse;
-  @extend .container-fluid;
-  //@extend .navbar-sticky-top;
-  @include condensed-font;
+.vb-avatar {
+  width: 119px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
 
-  // override .bg-inverse
-  background: $top-nav-bg-color;
+.vb-logo {
+  padding: 0;
+  line-height: 1;
 
-  // Let SVG rule the size
-  .navbar-brand {
-    padding: 0;
-    line-height: 1;
-
-    .logo {
-      width: 40px;
-      height: 40px;
-    }
+  .vb-logo__image {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
   }
 
-  .nav-item a {
-    line-height: $logo-side-length - $navbar-padding-vertical * 2;
+  .vb-logo__path {
+    fill: #fff;
   }
 }
 
-.xxx {
-  width: 100%;
-
-  &__zzz {
-    width: 20%;
-
-    &--temp {
-      width: 10%;
-    }
-  }
-
-                          СВЕРСТАТЬ НЕ МЕНЯЯ НИ СТРОЧКИ? ТОЛЬКО НА УРОВНЕ ХТМЛ?
+.vb-home-intro p {
+  margin: 0;
 }
 
-.home-about-wrapper {
+.vb-job-banner {
   background: #ebebeb;
-  @include condensed-font;
-  @extend .p-l, .p-r, .p-t;
-}
+  //color: white;
 
-.home-about {
-  @extend .container;
-
-  .avatar-wrapper, .about-wrapper {
-    @extend .m-b;
-    width: 50%;
+  p {
+    margin:0;
   }
 
-  .about-wrapper {
-    text-align: center;
-  }
+  button {
+    width: 100%;
 
-
-  .avatar {
-    width: 119px;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto;
-  }
-
-  @include media-breakpoint-up(sm) {
-    .avatar-wrapper {
-      float: left;
+    &:last-of-type {
+      margin-top:12px;
     }
-
-    .about-wrapper {
-      //@extend .p-l;
-      float: left;
-      text-align: left;
-    }
-
-    .avatar {
-      margin: 0;
-    }
-  }
-
-
-}
-
-
-.job-banner {
-  @extend .container;
-  @extend .p-t;
-  @extend .p-b;
-  @include condensed-font;
-
-  background: $red-color;
-
-  .banner-text {
-    @extend .col-xs-9;
-    color: white;
-  }
-
-  .banner-buttons {
-    @extend .col-xs-3;
-  }
-
-  .btn-hire, .btn-dismiss {
-    @extend .btn, .btn-sm, .btn-block;
-    @include button-variant($red-color, #FFF, #FFF);
   }
 }

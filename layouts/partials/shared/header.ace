@@ -1,0 +1,46 @@
+// TOP HEADER
+
+header.mdl-layout__header
+  .mdl-layout__header-row
+
+    .mdl-layout-title
+      a.vb-logo href=""
+        {{ partial "shared/logo" }}
+
+    .mdl-layout-title
+      | Ivan Byurgnanovskiy
+
+    // Add spacer, to align navigation to the right
+    .mdl-layout-spacer
+    // Navigation. We hide it in small screens
+    nav.mdl-navigation.vb-top-navigation--tablet-screen-and-larger
+
+      a.mdl-navigation__link href="#" Work
+      a.mdl-navigation__link href="#" Books
+      a.mdl-navigation__link href="#" Solutions
+      a.mdl-navigation__link href="#" Links
+      a.mdl-navigation__link href="#" Contacts
+
+.mdl-layout__drawer
+
+  span.mdl-layout-title Menu
+    nav.mdl-navigation
+
+      a.mdl-navigation__link href="#"
+        i.mdl-color-text--blue-grey-400.material-icons
+          | home
+        | Link 5
+      a.mdl-navigation__link href="#" Link6
+      a.mdl-navigation__link href="#" Link7
+      a.mdl-navigation__link href="#" Link8
+      a.mdl-navigation__link href="#" Link6
+      a.mdl-navigation__link href="#" Link7
+      a.mdl-navigation__link href="#" Link8
+      a.mdl-navigation__link href="#" Link6
+      a.mdl-navigation__link href="#" Link7
+      a.mdl-navigation__link href="#" Link8
+      a.mdl-navigation__link href="#" Link6
+      a.mdl-navigation__link href="#" Link7
+      a.mdl-navigation__link href="#" Link8
+
+// END TOP HEADER
