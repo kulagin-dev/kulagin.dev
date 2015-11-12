@@ -9,17 +9,18 @@ html lang="{{.Site.LanguageCode}}"
 
       main.mdl-layout__content
 
-        {{ partial "home/intro" }}
         {{ partial "shared/job_banner" }}
 
-        // HOMEPAGE CONTENT
-
-        {{ partial "home/portfolio" . }}
+        // WORKS CONTENT
 
         .vb-grid-content.mdl-grid
-          {{ partial "home/the_way" }}
-          {{ partial "home/skills" }}
-          {{ partial "home/my_story" }}
+          ul
+
+          {{ range .Data.Pages.ByWeight.Reverse }}
+            li
+              a href="{{ .Permalink }}" {{ .Title }}
+              div {{ .Date.Format "Mon, Jan 2, 2006" }}
+          {{ end }}
 
         // END HOMEPAGE CONTENT
 

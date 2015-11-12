@@ -1,0 +1,24 @@
+// PORTFOLIO ITEM
+
+{{ $slug := .Slug }}
+{{ $shortAbout := .Params.shortabout }}
+
+.vb-portfolio-showcase--item-card.mdl-card.mdl-shadow--6dp
+
+  .mdl-card__title
+    .mdl-card__title-text {{ .Title }}
+
+  .mdl-card__media
+     a.vb-portfolio-showcase--item-card-thumb-link href="#"
+      img.vb-portfolio-showcase--item-card-thumb-img src="/img/portfolio/thumbs/{{$slug}}-thumb.png"
+
+  .mdl-card__supporting-text {{ $shortAbout }}
+
+  .mdl-card__actions.mdl-card--border
+    a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect href="/works#{{$slug}}" Read more
+
+    {{ with $url := .Params.projecturl }}
+      a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect href="{{$url}}" target="_blank" Visit
+    {{ end }}
+
+// END OF PORTFOLIO ITEM

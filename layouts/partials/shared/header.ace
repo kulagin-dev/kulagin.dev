@@ -4,7 +4,7 @@ header.mdl-layout__header
   .mdl-layout__header-row
 
     .mdl-layout-title
-      a.vb-logo href=""
+      a.vb-logo href="/"
         {{ partial "shared/logo" }}
 
     .mdl-layout-title
@@ -15,7 +15,7 @@ header.mdl-layout__header
     // Navigation. We hide it in small screens
     nav.mdl-navigation.vb-top-navigation--tablet-screen-and-larger
 
-      a.mdl-navigation__link href="#" Work
+      a.mdl-navigation__link href="/works" Works
       a.mdl-navigation__link href="#" Books
       a.mdl-navigation__link href="#" Solutions
       a.mdl-navigation__link href="#" Links
