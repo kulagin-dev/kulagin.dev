@@ -6,4 +6,15 @@ footer.mdl-mini-footer
       li
         a href="/" Home
       li
-        a href="/works" Works
+        a href="/works" Work
+      li
+        a href="https://github.com/vanburg?tab=repositories" target="_blank" GitHub
+
+.vb-grid-content.mdl-grid
+  .mdl-cell.mdl-cell--12-col
+    p.mdl-typography--caption.mdl-typography--text-center
+      |
+        This site was created using <a href="http://gohugo.io/" target="_blank">Hugo</a>,
+        <a href="http://www.getmdl.io/" target="_blank">Google Material Design Lite</a>,
+        built by <a href="http://brunch.io/" target="_blank">Brunch</a>
+        and deployed by my custom script based upon <a href="https://github.com/capistrano/sshkit" target="_blank">SSHKit</a>

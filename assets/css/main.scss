@@ -1,18 +1,18 @@
+// TODO: BEMify this draft
+
 $color-main: rgb(255, 87, 34);
 $grid-desktop-breakpoint: 840px;
 
-.mdl-navigation {
-  padding-top: 8px;
-}
+// FIXING MDL DRAWER ICONS (1.0.6)
+// @See https://github.com/google/material-design-lite/issues/1400
 
-.mdl-navigation__link {
-  padding: 12px 16px;
-  line-height: 24px;
-}
-
-.mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
-  display: flex;
-  align-items: center;
+.mdl-layout__drawer {
+  .mdl-navigation {
+    .mdl-navigation__link {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
 
 // Showing top menu only when it should fit
@@ -61,18 +61,6 @@ $grid-desktop-breakpoint: 840px;
 
   &--content {
     background: #ebebeb;
-
-    p {
-      margin: 0;
-    }
-
-    a {
-      display: block;
-
-      &:last-of-type {
-        margin-top: 12px;
-      }
-    }
   }
 
   &__hidden {
@@ -81,6 +69,18 @@ $grid-desktop-breakpoint: 840px;
 
   &__visible {
     display: block;
+  }
+
+  &--text {
+    margin: 0;
+  }
+
+  &--readmore, &--dismiss {
+    display: block;
+  }
+
+  &--dismiss {
+    margin-top: 12px;
   }
 }
 

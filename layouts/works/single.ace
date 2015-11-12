@@ -10,7 +10,8 @@
   h3 {{ .Title }}
 
 .mdl-cell.mdl-cell--4-col.mdl-cell--4-col-tablet
-  img.vb-portfolio-showcase--item-card-thumb-img.mdl-shadow--6dp src="/img/portfolio/thumbs/{{$slug}}-thumb.png"
+  p
+    img.vb-portfolio-showcase--item-card-thumb-img.mdl-shadow--6dp src="/img/portfolio/thumbs/{{$slug}}-thumb.png"
 
 .mdl-cell.mdl-cell--8-col.mdl-cell--12-col-tablet
   {{ .Content }}
