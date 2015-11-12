@@ -1,4 +1,4 @@
-$color-main: rgb(255,87,34);
+$color-main: rgb(255, 87, 34);
 $grid-desktop-breakpoint: 840px;
 
 .mdl-navigation {
@@ -59,17 +59,39 @@ $grid-desktop-breakpoint: 840px;
 
 .vb-job-banner {
   background: #ebebeb;
-  //color: white;
 
   p {
-    margin:0;
+    margin: 0;
   }
 
   button {
     width: 100%;
 
     &:last-of-type {
-      margin-top:12px;
+      margin-top: 12px;
+    }
+  }
+}
+
+.vb-portfolio-showcase {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  &--item-card {
+    margin-bottom: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 330px - 32;
+
+    &-thumb-link {
+      display:block;
+    }
+
+    &-thumb-img {
+      width:100%;
     }
   }
 }

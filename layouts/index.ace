@@ -14,6 +14,8 @@ html lang="{{.Site.LanguageCode}}"
 
         // HOMEPAGE CONTENT
 
+        {{ partial "home/portfolio" }}
+
         .vb-grid-content.mdl-grid
           {{ partial "home/the_way" }}
           {{ partial "home/skills" }}

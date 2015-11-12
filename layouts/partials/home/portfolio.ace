@@ -1,0 +1,17 @@
+// PORTFOLIO SHOWCASE
+
+a name="portfolio"
+
+.mdl-grid
+  .mdl-cell.mdl-cell--12-col
+
+    h2.mdl-typography--text-center.mdl-typography--font-thin.mdl-typography--text-uppercase My Ruby Portfolio
+
+    .vb-portfolio-showcase
+      {{ partial "home/portfolio/card" }}
+      {{ partial "home/portfolio/card" }}
+      {{ partial "home/portfolio/card" }}
+      {{ partial "home/portfolio/card" }}
+      {{ partial "home/portfolio/card" }}
+
+// END OF PORTFOLIO SHOWCASE
