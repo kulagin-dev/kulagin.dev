@@ -1,0 +1,8 @@
+// SKILLS TABLE
+
+.vb-grid-content.mdl-grid
+  .mdl-cell.mdl-cell--12-col
+    h2.mdl-typography--text-center.mdl-typography--font-thin.mdl-typography--text-uppercase My skills
+    p Here I skipped things which level of knowlege hard to measure, such as TDD or SOLID.
+    {{ partial "home/skills_list" }}
+

@@ -16,8 +16,10 @@ html lang="{{.Site.LanguageCode}}"
 
         .vb-grid-content.mdl-grid
           {{ partial "home/the_way" }}
+          {{ partial "home/skills" }}
           {{ partial "home/my_story" }}
 
         // END HOMEPAGE CONTENT
 
+        // FOOTER
         {{ partial "shared/footer" }}
