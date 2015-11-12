@@ -14,12 +14,11 @@ html lang="{{.Site.LanguageCode}}"
         // WORKS CONTENT
 
         .vb-grid-content.mdl-grid
-          ul
+          .mdl-cell.mdl-cell--12-col
+            h2.mdl-typography--text-center.mdl-typography--font-thin.mdl-typography--text-uppercase My Ruby Portfolio
 
           {{ range .Data.Pages.ByWeight.Reverse }}
-            li
-              a href="{{ .Permalink }}" {{ .Title }}
-              div {{ .Date.Format "Mon, Jan 2, 2006" }}
+            {{ .Render "single" }}
           {{ end }}
 
         // END HOMEPAGE CONTENT

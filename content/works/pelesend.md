@@ -13,7 +13,10 @@ no frontend work applied (client is waiting for new design), removed or taken fr
 Results of refactoring: 
 
 ```
-3,626,024 bytes -> 322.949 bytes. 536 files changed, 5562 insertions(+), 98880 deletions(-).
+3,626,024 bytes -> 322,949 bytes
+536 files changed 
+5562 insertions(+)
+98880 deletions(-)
 ```
 
 Less code, less trouble :) 

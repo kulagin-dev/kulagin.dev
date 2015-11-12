@@ -1,4 +1,4 @@
-// PORTFOLIO ITEM
+// PORTFOLIO ITEM CARD
 
 {{ $slug := .Slug }}
 {{ $shortAbout := .Params.shortabout }}
@@ -15,10 +15,10 @@
   .mdl-card__supporting-text {{ $shortAbout }}
 
   .mdl-card__actions.mdl-card--border
-    a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect href="/works#{{$slug}}" Read more
+    a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect href="/works/#{{$slug}}" Read more
 
     {{ with $url := .Params.projecturl }}
       a.mdl-button.mdl-button--colored.mdl-js-button.mdl-js-ripple-effect href="{{$url}}" target="_blank" Visit
     {{ end }}
 
-// END OF PORTFOLIO ITEM
+// END OF PORTFOLIO ITEM CARD

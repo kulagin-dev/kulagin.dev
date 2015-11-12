@@ -26,21 +26,13 @@ header.mdl-layout__header
   span.mdl-layout-title Menu
     nav.mdl-navigation
 
-      a.mdl-navigation__link href="#"
-        i.mdl-color-text--blue-grey-400.material-icons
-          | home
-        | Link 5
-      a.mdl-navigation__link href="#" Link6
-      a.mdl-navigation__link href="#" Link7
-      a.mdl-navigation__link href="#" Link8
-      a.mdl-navigation__link href="#" Link6
-      a.mdl-navigation__link href="#" Link7
-      a.mdl-navigation__link href="#" Link8
-      a.mdl-navigation__link href="#" Link6
-      a.mdl-navigation__link href="#" Link7
-      a.mdl-navigation__link href="#" Link8
-      a.mdl-navigation__link href="#" Link6
-      a.mdl-navigation__link href="#" Link7
-      a.mdl-navigation__link href="#" Link8
+      / Icons list: https://www.google.com/design/icons/
+
+      a.mdl-navigation__link href="/"
+        i.mdl-color-text--blue-grey-400.material-icons home
+        | Home
+      a.mdl-navigation__link href="/works"
+        i.mdl-color-text--blue-grey-400.material-icons palette
+        | Work
 
 // END TOP HEADER
