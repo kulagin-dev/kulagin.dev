@@ -28,7 +28,7 @@
     p And so in 2011 I find a RoR video course at Lynda.com, and was excited how great RoR is. My dream became true: I can write so little code (thanks to Ruby) to do so amazing things.
     p I really regret I didn't met RoR and Ruby earlier, and that regret led to another experience level: since then, I'm trying to be on the edge of backed development technologies, to not to miss something really interesting and making my life simpler.
 
-    h3 Spec the ruby
+    h3 Spec the Ruby
     p After RoR inspiration and digging in its code, I've realised what I should learn Ruby language itself first, to read and understand what actually happening there. Since by that time I was a huge fan of TDD, I've started to search a tool for testing (and documenting my Ruby research at the same time), and find Rspec. That was another shock, comparable with RoR itself. I've fell in love with the expressiveness of Rspec (again, thanks to Ruby), and till today I can't imagine my work without it.
     p After few months of learning Ruby and RoR through Rspec & Capybara, I decided to forget about PHP, and completely switch to RoR, like many others PHP developers.
 
@@ -37,6 +37,6 @@
     p It's been a long time since I've switched to Ruby and it's ecosystem, but still, every day I'm using it, I'm learning beautiful things, interesting ways of solving problems, finding myself, finally, at home.
 
     h3 Programming future
-    p As I mentioned before, I'm trying to learn every day, and the next steps in my roadmap is the learning of becoming more and more mature and popular Go language, and I think that it will be great to also learn Clojure (and ClojureScript, that I think is awesome replacement of Javascript). For the last, I have more academic interest, I had a little experience of using JVM, but that was a long time ago (I wrote simple app for my Siemens SL45).
+    p As I mentioned before, I'm trying to learn every day, and the next steps in my roadmap is the learning of becoming more and more mature and popular Go language, and I think that it will be great to also learn Clojure (and ClojureScript, that I think is awesome replacement of Javascript). For the last, I have more academic interest, I had a little experience of using JVM, but that was a long time ago (I created a simple app for my <a href="https://www.google.ru/search?q=Siemens+SL45&tbm=isch" target="_blank">Siemens SL45</a>).
 
 // END MY STORY

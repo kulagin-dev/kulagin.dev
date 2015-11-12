@@ -1,49 +1,9 @@
 // FOOTER
-footer.mdl-mega-footer
-  .mdl-mega-footer__top-section
-    .mdl-mega-footer__left-section
-      button.mdl-mini-footer__social-btn.mdl-color--deep-orange
-        i.mdl-color-text--blue-grey-400.material-icons
-          | facebook
-      button.mdl-mini-footer__social-btn
-        i.mdl-color-text--grey-400.material-icons
-          | error
-      button.mdl-mini-footer__social-btn
-        i.mdl-color-text--grey-400.material-icons
-          | vpn-key
-    .mdl-mega-footer__right-section
-      a href="" Link 1
-      a href="" Link 2
-      a href="" Link 3
-
-  .mdl-mega-footer__middle-section
-    .mdl-mega-footer__drop-down-section
-      h1.mdl-mega-footer__heading
-        | Books
-      ul.mdl-mega-footer__link-list
-        li
-          a href="" Link 1
-        li
-          a href="" Link 2
-        li
-          a href="" Link 3
-    .mdl-mega-footer__drop-down-section
-      h1.mdl-mega-footer__heading
-        | Video
-      ul.mdl-mega-footer__link-list
-        li
-          a href="" Link 1
-        li
-          a href="" Link 2
-        li
-          a href="" Link 3
-
-  .mdl-mega-footer__bottom-section
-    .mdl-logo Mega-Footer Bottom Section Heading
-    ul.mdl-mega-footer__link-list
+footer.mdl-mini-footer
+  .mdl-mini-footer__left-section
+    .mdl-logo Ivan Byurganovskiy
+    ul.mdl-mini-footer__link-list
       li
-        a href="" Link 1
+        a href="/" Home
       li
-        a href="" Link 2
-      li
-        a href="" Link 3
+        a href="/works" Works

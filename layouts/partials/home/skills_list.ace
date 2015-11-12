@@ -2,47 +2,48 @@
 
 h3 Languages
 
-p This group of lanugages I know very vell (some of them I don't use anymore, though)
+p This group of languages I know very vell (some of them I don't use anymore, though)
 
 ul
   li
     |
       <strong>Ruby</strong> - today is my primary language I use for several years, and feel myself very comportable with it.
-      For a few last years there's rumors what ruby is dying, but trust me - it's allright with language, there's a problem on how pepople use it. I'm about monkey-pathcing, God classes and other bad practicies.
-      Ruby gives a lot of freedom and becasue of that requires a lot of developer's responsibility.
-      That's why principles such as SOLID works so good for Ruby - they restrict devs of wrong language using (take a look at my favorite example - <a href="http://lotusrb.org/" tagget="_blank">Lotus framework</a>).
+      For a few last years there are rumors what Ruby is dying, but trust me - it's allright with language, there's a problem on how pepople use it.
+      I'm about monkey-patching, God classes and other bad practicies.
+      Ruby gives a lot of freedom and because of that requires a lot of developer's responsibility.
+      That's why principles such as SOLID works so good for Ruby - they prevent developers from wrong language using (take a look at my favorite example - <a href="http://lotusrb.org/" tagget="_blank">Lotus framework</a>).
 
   li
     |
-      <strong>*sh</strong> - every developer must feel comfortable with at least one of them, knowing different tricks and edge-cases.
+      <strong>*sh</strong> - every developer must feel comfortable with at least one of them, and knowing their different tricks and edge-cases.
       *sh itself not very hard to learn.
       Much more important to learn common tools provided by *nix and tasks they allow to complete.
 
   li
     |
       <strong>PHP</strong> - I don't use PHP anymore, but this was my primary language for more that 10 years.
-      I sopped using it when PHP began to demonstrate features of solid language like namepsaces, but that was too late for me.
+      I stopped using it when PHP began to demonstrate features of solid language like namepsaces, but that was too late for me.
 
   li
     |
-      <strong>C#</strong> - don't use anymore, but that was a great experience
+      <strong>C#</strong> - I don't use it anymore, but that was a great experience, and I believe it will help me with Java
 
-p The languages below I'm learning one by one. As soon as my kwnolege and practical using of them will be enought, I will move them to the upper list.
+p The languages below I'm currenlty learning one by one. As soon as my knowlege and practical using of them will be enought, I will move them to the upper list.
 
 ul
   li
     |
       <strong>Go</strong> - two factors mixed into one here.
-      First, beacause of Ruby is learned very well, I decided to move further and learn something really new.
+      First, because of Ruby is learned very well, I decided to move further and learn something really new.
       And the second factor: 'cause last years there is a trend on separating apps into microservices (which is very nice idea), I don't want to be outide of that trend.
-      After some experiments and research I decided what go will match the best for such tasks: it's simple, fast, joung but with solid ecosystem already.
+      After some experiments and research I decided what Go will match the best for such tasks: it's simple, fast, young but with solid ecosystem already.
 
 
   li
     |
-      <strong>Java</strong> - though I hav some experience Java many years ago (before C# came into scene), I realized what since then Java world changed a lot.
-      Practically speaking I'm learning Java from the start, but thatnks to C# experiance this process is quite fast.
-      One of the main goals I have - is to digg into the world of JVM again, to fell comfortable while learning the rest two languages below
+      <strong>Java</strong> - though I have some experience with Java many years ago (before C# came into scene), I realized what since then Java world changed a lot.
+      Practically speaking I'm learning Java from the start, but thanks to C# experiance this process is quite fast.
+      One of the main goals I have - is to dig into the world of JVM again, to fell comfortable while learning the rest two languages below
 
   li
     |
@@ -52,24 +53,24 @@ ul
   li
     |
       <strong>Clojure</strong> - this is the fourth language I plan to learn.
-      There are to reasons: get more functional and ClojureScript.
-      Read intro for <a href="#front-end">frontend section below</a> about last goal.
+      There are two reasons: get more functional and ClojureScript.
+      Read intro for <a href="#front-end">frontend section below</a> about last goal <strong>[frontend section is not written yet]</strong>.
 
-p Maybe someday I will take a closer look at Erlang (had a little experience) and Elixir + Phoenix, but have no plans for that.
+p Maybe someday I will take a closer look at Erlang (had a little experience) and Elixir + Phoenix, but have no plans for that right now.
 
 
 h3 Libs
 
-p For now I'll keep that list short (this section will be updated): Rails, Devise, Cancancan, OmniAuth, Capistrano, Sidekiq, RSpec, Capybara, Lotus
+p For now I'll keep that list short <strong>[this section will be updated]</strong>: Rails, Devise, Cancancan, OmniAuth, Capistrano, Sidekiq, RSpec, Capybara, Lotus, ...
+
 
 h3 Databases
-
 
 ul
   li
     |
       <strong>PostgreSQL</strong> - this is my favorite RDBMS since I begin to use Rails.
-      My experience includes: all the common stuff, administration/migration, triggers, rules, functions, materialized views, PL/pqPSQL, extensions like cube, uuid-ossp, hstore and so on.
+      My experience includes: all the common stuff, administration/migration, triggers, rules, functions, materialized views, PL/pgPSQL, extensions like cube, uuid-ossp, hstore and so on.
       I'm not a Postgre guru, but it's always interesting for me to learn something new about it.
 
   li
@@ -83,11 +84,11 @@ ul
 
   li
     |
-      <strong>MongoDB</strong> - I began to use at the same time within the same project with Redis
+      <strong>MongoDB</strong> - I began to use it at the same time as Redis within the same project
 
   li
     |
-      <strong>Elasticsearch</strong> - never used, but actually this is my next DB to learn
+      <strong>Elasticsearch</strong> - never used, but actually this is my next DB to learn, I believe that will be very interesting
 
 
 h3 API's integration
@@ -95,35 +96,37 @@ h3 API's integration
 ul
   li
     |
-      <strong>Twilio</strong> - this API I know very well since I was responsible to refactor communication part of recent project.
+      <a href="https://www.twilio.com/" target="_blank"><strong>Twilio</strong></a> - this API I learned very well since I was responsible to refactor complex communication part of recent project.
   li
     |
-      <strong>Apple Passbook API</strong> (Web and Passbook itself) - ADD TEXT HERE
+      <a href="https://developer.apple.com/wallet/" target="_blank"><strong>Apple Passbook API</strong></a> (Web, Pushes and Pass format itself) - <strong>[this section will be updated, there's a lot of interesting tasks I've done using it]</strong>
   li
     |
-      <strong>Slack</strong> - easy integration, nothing interesting: fancy bot posts with images and so on
+      <a href="https://slack.com/" target="_blank"><strong>Slack</strong></a> - easy integration, nothing interesting: fancy bot messages with images and so on
 
   li
     |
-      <strong>Rollbar</strong> (https://rollbar.com/) - error tracking service
+      <a href="https://rollbar.com/" target="_blank"><strong>Rollbar</strong></a> - error tracking service
 
   li
     |
-      <strong>NewRelic</strong> - easy and configurable app monitoring (used client for Rails + Sidekiq app)
+      <a href="http://newrelic.com/" target="_blank"><strong>NewRelic</strong></a> - famous easy and configurable app monitoring and analytics (used for Rails and Sidekiq app)
 
   li
     |
-      <strong>Papertrail</strong> (https://papertrailapp.com/) - easy to setup, nothing too huge here
+      <a href="https://papertrailapp.com/" target="_blank"><strong>Papertrail</strong></a> - easy to setup, nothing too huge here
 
   li
     |
-      <strong>Dead Man’s Snitch</strong> (https://deadmanssnitch.com/) - small service for trackin' cron jobs running.
+      <a href="https://deadmanssnitch.com/" target="_blank"><strong>Dead Man’s Snitch</strong></a> - small service for trackin' cron jobs running.
 
 
 h3 Services
 
+p <strong>[this section will be updated]</strong>
 p Amazon EC2, Amazon S3, Amazon RDS.
-p Have a little experience with Heroku, but no one of my clients actually used it.
+p I have a little experience with Heroku, but no one of my clients actually used it.
+
 
 h3 Operating systems
 
@@ -138,7 +141,7 @@ ul
 
   li
     |
-      <strong>FreeBSD</strong> - my favorite server OS I use for my own dedicated server.
+      <strong>FreeBSD</strong> - my favorite server OS I use for my own dedicated server
 
   li
     |
@@ -152,6 +155,4 @@ h3 Front end
 
 p
   |
-    As you may notice there's nothing about JS/CSS here.
-    That's because I believe what I'm strong at backed development with backend languages.
     <strong>[This section will be updated]</strong>
