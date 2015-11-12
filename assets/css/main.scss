@@ -58,18 +58,29 @@ $grid-desktop-breakpoint: 840px;
 }
 
 .vb-job-banner {
-  background: #ebebeb;
 
-  p {
-    margin: 0;
+  &--content {
+    background: #ebebeb;
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      display: block;
+
+      &:last-of-type {
+        margin-top: 12px;
+      }
+    }
   }
 
-  button {
-    width: 100%;
+  &__hidden {
+    display: none;
+  }
 
-    &:last-of-type {
-      margin-top: 12px;
-    }
+  &__visible {
+    display: block;
   }
 }
 
@@ -87,11 +98,11 @@ $grid-desktop-breakpoint: 840px;
     width: 330px - 32;
 
     &-thumb-link {
-      display:block;
+      display: block;
     }
 
     &-thumb-img {
-      width:100%;
+      width: 100%;
     }
   }
 }

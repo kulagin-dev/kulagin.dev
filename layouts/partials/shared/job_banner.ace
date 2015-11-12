@@ -1,19 +1,22 @@
 // JOB BANNER
 
-.vb-grid-full-width.mdl-grid
-  .mdl-cell.mdl-cell--12-col
-    .vb-job-banner.mdl-grid
+.vb-job-banner.vb-job-banner__hidden
+  .vb-grid-full-width.mdl-grid
+    .mdl-cell.mdl-cell--12-col
+      .vb-job-banner--content.mdl-grid
 
-      .mdl-cell.mdl-cell--12-col.mdl-cell--10-col-desktop
-        p
-          |
-            I'm currently looking for long&#8209;term&nbsp;job&nbsp;at&nbsp;odesk
-            The Indonesian capital city, Jakarta, is located on western Java. Much of Indonesian history took place on Java. It was the center of powerful Hindu-Buddhist empires, the Islamic sultanates, and the core of the colonial Dutch East Indies. Java was also the center of the Indonesian struggle for independence during the 1930s and 1940s. Java dominates Indonesia politically, economically and culturally.
+        .mdl-cell.mdl-cell--12-col.mdl-cell--10-col-desktop
+          p
+            |
+              I'm currently looking for long&#8209;term&nbsp;job&nbsp;at&nbsp;odesk
+              The Indonesian capital city, Jakarta, is located on western Java. Much of Indonesian history took place on Java. It was the center of powerful Hindu-Buddhist empires, the Islamic sultanates, and the core of the colonial Dutch East Indies. Java was also the center of the Indonesian struggle for independence during the 1930s and 1940s. Java dominates Indonesia politically, economically and culturally.
 
-      .mdl-cell.mdl-cell--12-col.mdl-cell--2-col-desktop.mdl-cell--middle
-        button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--colored
-          | Read more
-        button.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent
-          | Dismiss
+        .mdl-cell.mdl-cell--12-col.mdl-cell--2-col-desktop.mdl-cell--middle
+          a.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--colored href="/#portfolio"
+            i.material-icons subject
+            | Read more
+          a.vb-job-banner--dismiss.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent
+            i.material-icons delete
+            | Dismiss
 
 // END JOB BANNER

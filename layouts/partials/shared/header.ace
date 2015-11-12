@@ -32,7 +32,7 @@ header.mdl-layout__header
         i.mdl-color-text--blue-grey-400.material-icons home
         | Home
       a.mdl-navigation__link href="/works"
-        i.mdl-color-text--blue-grey-400.material-icons palette
+        i.mdl-color-text--blue-grey-400.material-icons work
         | Work
 
 // END TOP HEADER
