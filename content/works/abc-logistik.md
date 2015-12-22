@@ -3,6 +3,8 @@ weight: 1
 slug: abc-logistik
 title: ABC Logistik
 shortAbout: Regular complexity site for Russian logistic company
+images:
+  - home
 ---
 
 Regular complexity site for Russian logistic company, made solely by myself from the ground. 

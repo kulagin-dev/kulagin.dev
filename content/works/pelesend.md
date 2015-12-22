@@ -4,6 +4,8 @@ slug: pelesend
 title: Pelesend corporate site
 projectUrl: http://www.pelesend.com/
 shortAbout: Refactoring and UI improvements of Pelesend corporate site
+images:
+  - home
 ---
 
 Almost completely rewritten backend (Ruby on Rails based) ugly source code, 

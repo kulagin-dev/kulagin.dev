@@ -3,6 +3,11 @@ weight: 4
 slug: bestfit 
 title: Pass designer
 shortAbout: Apple Passbook pass real-time designer
+images:
+  - home
+  - primary
+  - versions
+  - versions_schedule
 ---
 
 AngularJs+Ruby on Rails project with integration with Apple Passbook API and Apple push service. 
