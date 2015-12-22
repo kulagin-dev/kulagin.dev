@@ -7,10 +7,10 @@ images:
   - home
 ---
 
-Regular complexity site for Russian logistic company, made solely by myself from the ground. 
-Some features (menu items) client decided to implement in the future.  
+Regular complexity site for Russian logistic company, made solely by myself from the ground.
+Some features (menu items) client decided to implement in the future.
 
-Tools used: 
+Tools used:
 
 - Ruby on Rails 3.2
 - MySQL (not my decision)
@@ -21,7 +21,7 @@ Tools used:
 - compass-rails
 - bootstrap-sass
 - rspec
-- capybara 
+- capybara
 - factory_girl_rails
 - livereload
 - capistrano
