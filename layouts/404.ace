@@ -1,1 +1,24 @@
-h1 404
+= doctype html
+html lang="{{.Site.LanguageCode}}"
+
+  {{ partial "shared/head" . }}
+
+  body
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      {{ partial "shared/header" }}
+
+      main.mdl-layout__content
+
+        {{ partial "home/intro" }}
+        {{ partial "shared/job_banner" }}
+
+        // 404 CONTENT
+
+        .vb-grid-content.mdl-grid
+          .mdl-cell.mdl-cell--12-col
+            h1 404: Oops, nothing here....
+
+        // END 404 CONTENT
+
+        // FOOTER
+        {{ partial "shared/footer" }}
