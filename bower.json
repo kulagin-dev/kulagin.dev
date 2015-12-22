@@ -1,0 +1,22 @@
+{
+  "name": "vanburg-ru-assets",
+  "version": "0.1.0",
+  "homepage": "https://github.com/vanburg/ru",
+  "authors": [
+    "Ivan Byurganovskiy <me@vanburg.ru>"
+  ],
+  "private": true,
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "js-cookie": "~2.0.3"
+  },
+  "devDependencies": {
+    "material-design-icons": "~2.0.0",
+    "material-design-lite": "~1.0.6"
+  }
+}

@@ -1,0 +1,19 @@
+baseUrl = "http://vanburg.ru/"
+languageCode = "en-us"
+title = "Ivan Byurganovksiy personal blog"
+author = "___TOP___"
+metaDataFormat = "yaml"
+sectionPagesMenu = "main"
+editor = ""
+disableRSS = true
+disableSitemap = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  language = "languages"
+  concept = "concepts"
+  tool = "tools"
+
+[params]
+  author = "__SUB____van Byurganovksiy"

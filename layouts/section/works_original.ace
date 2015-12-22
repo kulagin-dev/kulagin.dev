@@ -1,0 +1,27 @@
+= doctype html
+html lang="{{.Site.LanguageCode}}"
+
+  {{ partial "shared/head" . }}
+
+  body
+    .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
+      {{ partial "shared/header" }}
+
+      main.mdl-layout__content
+
+        {{ partial "shared/job_banner" }}
+
+        // WORKS CONTENT
+
+        .vb-grid-content.mdl-grid
+          .mdl-cell.mdl-cell--12-col
+            h2.mdl-typography--text-center.mdl-typography--font-thin.mdl-typography--text-uppercase My Ruby Portfolio
+
+          {{ range .Data.Pages.ByWeight.Reverse }}
+            {{ .Render "single" }}
+          {{ end }}
+
+        // END HOMEPAGE CONTENT
+
+        // FOOTER
+        {{ partial "shared/footer" }}

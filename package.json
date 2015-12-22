@@ -1,0 +1,22 @@
+{
+  "name": "vanburg-ru-assets",
+  "description": "Assets for http://vanburg.ru",
+  "author": "Ivan Byurganovksiy",
+  "version": "0.1.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "brunch": "^1.8.5",
+    "clean-css-brunch": "^1.7.2",
+    "gzip-brunch": "^1.3.0",
+    "javascript-brunch": "^1.8.0",
+    "sass-brunch": "^1.9.1",
+    "uglify-js-brunch": "^1.7.8"
+  }
+}

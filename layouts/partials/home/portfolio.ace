@@ -1,0 +1,15 @@
+// PORTFOLIO SHOWCASE
+
+.mdl-grid
+  .mdl-cell.mdl-cell--12-col
+
+    a name="portfolio"
+    h2.mdl-typography--text-center.mdl-typography--font-thin.mdl-typography--text-uppercase My Ruby Portfolio
+
+    .vb-portfolio-showcase
+      {{ range where .Data.Pages.ByWeight.Reverse "Section" "works" }}
+        {{ .Render "card" }}
+      {{ end }}
+
+// END OF PORTFOLIO SHOWCASE
+

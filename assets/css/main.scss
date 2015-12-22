@@ -1,0 +1,112 @@
+// TODO: BEMify this draft
+
+$color-main: rgb(255, 87, 34);
+$grid-desktop-breakpoint: 840px;
+
+// FIXING MDL DRAWER ICONS (1.0.6)
+// @See https://github.com/google/material-design-lite/issues/1400
+
+.mdl-layout__drawer {
+  .mdl-navigation {
+    .mdl-navigation__link {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+// Showing top menu only when it should fit
+@media (max-width: $grid-desktop-breakpoint - 1) {
+  .vb-top-navigation--tablet-screen-and-larger {
+    display: none;
+  }
+}
+
+.vb-grid-full-width {
+  max-width: 960px;
+}
+
+.vb-grid-content {
+  max-width: 760px;
+}
+
+.vb-avatar {
+  width: 119px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.vb-logo {
+  padding: 0;
+  line-height: 1;
+
+  .vb-logo__image {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+  }
+
+  .vb-logo__path {
+    fill: #fff;
+  }
+}
+
+.vb-home-intro p {
+  margin: 0;
+}
+
+.vb-job-banner {
+
+  &--content {
+    background: #ebebeb;
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  &__visible {
+    display: block;
+  }
+
+  &--text {
+    margin: 0;
+  }
+
+  &--readmore, &--dismiss {
+    display: block;
+  }
+
+  &--dismiss {
+    margin-top: 12px;
+  }
+}
+
+.vb-portfolio-showcase {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  &--item-card {
+    margin-bottom: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 330px - 32;
+
+    &-thumb-link {
+      display: block;
+    }
+
+    &-thumb-img {
+      width: 100%;
+    }
+  }
+}
+
+.vb-portfolio-thumb-img {
+  width: 100%;
+}

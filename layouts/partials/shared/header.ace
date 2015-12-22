@@ -1,0 +1,40 @@
+// TOP HEADER
+
+header.mdl-layout__header
+  .mdl-layout__header-row
+
+    .mdl-layout-title
+      a.vb-logo href="/"
+        {{ partial "shared/logo" }}
+
+    .mdl-layout-title
+      | Ivan Byurgnanovskiy
+
+    // Add spacer, to align navigation to the right
+    .mdl-layout-spacer
+    // Navigation. We hide it in small screens
+    nav.mdl-navigation.vb-top-navigation--tablet-screen-and-larger
+
+      a.mdl-navigation__link href="/works" Work
+      //       a.mdl-navigation__link href="#" Books
+      a.mdl-navigation__link href="https://github.com/vanburg?tab=repositories" target="_blank" GitHub
+
+.mdl-layout__drawer
+
+  span.mdl-layout-title Menu
+  nav.mdl-navigation
+
+    / Icons list: https://www.google.com/design/icons/
+
+    a.mdl-navigation__link href="/"
+      i.material-icons home
+      | Home
+    a.mdl-navigation__link href="/works"
+      i.material-icons palette
+      | Work
+
+    hr
+    a.mdl-navigation__link href="https://github.com/vanburg?tab=repositories" target="_blank"
+      | GitHub
+
+// END TOP HEADER

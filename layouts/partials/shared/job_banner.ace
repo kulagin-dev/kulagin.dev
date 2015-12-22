@@ -1,0 +1,25 @@
+// JOB BANNER
+
+.vb-job-banner.vb-job-banner__hidden
+  .vb-grid-full-width.mdl-grid
+    .mdl-cell.mdl-cell--12-col
+      .vb-job-banner--content.mdl-grid
+
+        .mdl-cell.mdl-cell--12-col.mdl-cell--9-col-desktop
+
+          p.vb-job-banner--text
+            |
+              I'm currently looking for long/short term job at <a href="https://goo.gl/P0UdK9" target="_blank">Upwork</a> as a back end developer (possible with some front end tasks).
+              I have about 1200 registered hours working with average 4.5 stars rating (Upwork has wierd rating system, you can check <a href="https://goo.gl/P0UdK9" target="_blank">my rating</a> yourself by re-calculating stars).
+              Please, <a href="/#portfolio">read an extended info about me</a> to get the first impressions if you are interesed.
+
+
+        .mdl-cell.mdl-cell--12-col.mdl-cell--3-col-desktop.mdl-cell--middle
+          a.vb-job-banner--readmore.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--colored href="/#portfolio"
+            i.material-icons subject
+            | Read more
+          a.vb-job-banner--dismiss.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent
+            i.material-icons delete
+            | Dismiss
+
+// END JOB BANNER

@@ -1,0 +1,34 @@
+head
+  title {{.Site.Title}}
+
+  {{ if .RSSlink }}
+    link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"
+  {{ end }}
+
+  meta charset="utf-8"
+
+  meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"
+  meta name="viewport" content="width=device-width, initial-scale=1.0"
+  meta name="mobile-web-app-capable" content="yes"
+
+  meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}"
+  {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ with .Site.Author }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ .Hugo.Generator }}
+  meta name="node" content="{{ .IsNode }}"
+
+  //   Check out Palanquin font @ https://www.google.com/fonts/
+  //   link href="//fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto+Condensed:400,700" rel="stylesheet" type="text/css"
+
+  //   link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"
+  //   link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.deep_orange-blue.min.css"
+  link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.deep_orange-red.min.css"
+  script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"
+  link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
+  link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  link rel="stylesheet" href="/assets/main.css"
+
+  // TODO: Move to footer
+  script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"
+  script src="/assets/vendor.js"
+  script src="/assets/main.js"
