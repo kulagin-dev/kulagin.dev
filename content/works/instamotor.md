@@ -22,6 +22,7 @@ My noticeable goals were:
 - forwadring calls/[steganography](https://en.wikipedia.org/wiki/Steganography) (shown on screenshot)
 - Amazon EC2 instances managing and tuning
 - rewrite and make testable internal Slack messenger (shown on screenshot)
+- integration with NewRelic, Rollbar, Papertrail and Dead Man’s Snitch 3rd-party services
 - plenty of small refactorings (code had low quality)
 
 And of course everything was tested by rSpec.
