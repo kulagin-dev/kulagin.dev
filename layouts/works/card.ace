@@ -9,7 +9,7 @@
     .mdl-card__title-text {{ .Title }}
 
   .mdl-card__media
-     a.vb-portfolio-showcase--item-card-thumb-link href="#"
+     a.vb-portfolio-showcase--item-card-thumb-link href="/works/#{{$slug}}"
       {{ $image := (index .Params.images 0) }}
       img.vb-portfolio-showcase--item-card-thumb-img src="/img/portfolio/thumbs/{{$slug}}_{{$image}}.png"
 

@@ -8,6 +8,7 @@ This is a repo of [my static site](http://vanburg.ru)
 
 * [ ] instamotor about
 * [ ] screenshot captions
+* [x] thumbs links (*2015-12-24*)
 * [x] get back metrics (*2015-12-24*)
 
 **Secondary**
