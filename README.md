@@ -14,8 +14,8 @@ This is a repo of [my static site](http://vanburg.ru)
 
 * [ ] add lightbox for images ([this one?](https://github.com/noelboss/featherlight/))
 * [ ] contacts
-* [ ] add Lua to a list of languages
 * [ ] add books list
+* [x] add Lua to a list of languages (*2015-12-24*)
 
 # Dependencies
 

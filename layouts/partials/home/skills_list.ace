@@ -28,6 +28,11 @@ ul
     |
       <strong>C#</strong> - I don't use it anymore, but that was a great experience, and I believe it will help me with Java
 
+  li
+    |
+      <strong>Lua</strong> - using for creating custom <a href="https://en.wikipedia.org/wiki/ConTeXt" target="_blank">ConTeXt</a> writers for <a href="http://pandoc.org/README.html" target="_blank">Pandoc</a> (I love parsers and books! :).
+      Easy to learn, have unusual RegExp engine, and not much popular...
+
 p The languages below I'm currenlty learning one by one. As soon as my knowlege and practical using of them will be enought, I will move them to the upper list.
 
 ul
