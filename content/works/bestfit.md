@@ -1,8 +1,8 @@
 ---
 weight: 4
 slug: bestfit
-title: Pass designer
-shortAbout: Apple Passbook pass real-time designer with passbook API integration
+title: Apple pass manager
+shortAbout: Apple pass WYSIWYG designer with passbook API integration
 images:
   - home
   - primary
