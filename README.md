@@ -6,15 +6,15 @@ This is a repo of [my static site](http://vanburg.ru)
 
 **Primary**
 
-* [ ] instamotor about
-* [ ] screenshot captions
+* [ ] contacts
+* [ ] screenshot captions?
+* [x] instamotor about
 * [x] thumbs links (*2015-12-24*)
 * [x] get back metrics (*2015-12-24*)
 
 **Secondary**
 
 * [ ] add lightbox for images ([this one?](https://github.com/noelboss/featherlight/))
-* [ ] contacts
 * [ ] add books list
 * [x] add Lua to a list of languages (*2015-12-24*)
 

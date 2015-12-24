@@ -11,4 +11,19 @@ images:
   - working
 ---
 
-**[TODO]**
+The project consists of two parts: main grape-based API backend and web crawler, gathering vehicle sell postings from the web.
+API includes tricky communication layer based on [Twilio](https://www.twilio.com).
+My noticeable goals were:
+
+- migrate both apps from Resque to Sidekiq (jobs rework, queues tuning)
+- add Sidekiq monitoring and logging extensions
+- refactor/add MMS handling for Twilio
+- leasing and freeing Twilio phone numbers
+- forwadring calls/[steganography](https://en.wikipedia.org/wiki/Steganography) (shown on screenshot)
+- Amazon EC2 instances managing and tuning
+- rewrite and make testable internal Slack messenger (shown on screenshot)
+- plenty of small refactorings (code had low quality)
+
+And of course everything was tested by rSpec.
+
+**NOTE**: my goals were related to backend only
