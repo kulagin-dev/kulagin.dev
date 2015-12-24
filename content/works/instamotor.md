@@ -19,12 +19,12 @@ My noticeable goals were:
 - add Sidekiq monitoring and logging extensions
 - refactor/add MMS handling for Twilio
 - leasing and freeing Twilio phone numbers
-- forwadring calls/[steganography](https://en.wikipedia.org/wiki/Steganography) (shown on screenshot)
+- forwarding calls/[steganography](https://en.wikipedia.org/wiki/Steganography) (shown on screenshot)
 - Amazon EC2 instances managing and tuning
 - rewrite and make testable internal Slack messenger (shown on screenshot)
 - integration with NewRelic, Rollbar, Papertrail and Dead Man’s Snitch 3rd-party services
 - plenty of small refactorings (code had low quality)
 
-And of course everything was tested by rSpec.
+And of course everything was tested with Rspec.
 
 **NOTE**: my goals were related to backend only
