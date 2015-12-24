@@ -128,9 +128,12 @@ ul
 
 h3 Services
 
-p <strong>[this section will be updated]</strong>
-p Amazon EC2, Amazon S3, Amazon RDS.
-p I have a little experience with Heroku, but no one of my clients actually used it.
+ul
+  li <strong>Amazon EC2</strong>
+  li <strong>Amazon S3</strong>
+  li <strong>Amazon RDS</strong>
+
+p I have a little experience with Heroku, but none of my clients actually used it. Anyway, that should not be a trouble.
 
 
 h3 Operating systems
@@ -161,3 +164,5 @@ h3 Front end
 p
   |
     <strong>[This section will be updated]</strong>
+
+p In short: I'm NOT looking for an anyhow frontend-related job (except short-term). Only server-side.
