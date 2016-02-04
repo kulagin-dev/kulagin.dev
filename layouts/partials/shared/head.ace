@@ -22,8 +22,8 @@ head
 
   //   link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"
   //   link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.deep_orange-blue.min.css"
-  link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.deep_orange-red.min.css"
-  script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"
+  link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.1.1/material.deep_orange-red.min.css"
+  script src="https://storage.googleapis.com/code.getmdl.io/1.1.1/material.min.js"
   link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
   link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"
   link rel="stylesheet" href="/assets/main.css"
