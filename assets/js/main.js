@@ -5,6 +5,7 @@
  * TODO:
  * - replace fades with CSS animation
  */
+
 jQuery(function() {
   var COOKIE_NAME = 'job-banner-dismissed';
   var DISMISS_PERIOD_DAYS = 7;
@@ -19,6 +20,8 @@ jQuery(function() {
   }
 
   function showJobBanner($banner) {
+    console.log("Showing job banner");
+
     $banner.fadeIn(700).removeClass(HIDDEN_CSS_CLASS).addClass(VISIBLE_CSS_CLASS);
   }
 
@@ -34,8 +37,6 @@ jQuery(function() {
   var $dismissButton = $(BUTTON_SELECTOR, $banner);
   var dismissed = isDismissed();
 
-  console.log("JOB BANNER DISMISSED:", dismissed);
-
   if (!dismissed) {
     showJobBanner($banner);
 
@@ -43,5 +44,7 @@ jQuery(function() {
       hideJobBanner($banner);
       setDismissed();
     });
+  } else {
+    console.log("Job banner dismissed");
   }
 });

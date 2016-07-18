@@ -3,6 +3,8 @@ exports.config =
 
   notifications: ['error', 'warn', 'info']
   fileListInterval: 100
+  npm:
+    enabled: false
 
   conventions:
     # Will check against files that should be ignored by brunch compiler, but are
@@ -18,10 +20,10 @@ exports.config =
     # ignored: false
 
     # DON'T COPY `assets` DIR
-    # If test gives true, file won't be compiled and will be just moved to
-    # public directory instead.
+    # Default value: /assets[\\/]/. If test gives true, file won't be compiled
+    # and will be just moved to public directory instead.
 
-    assets: false
+    assets: []
 
     # If test gives true, file won't be wrapped in module, if there are any.
 
