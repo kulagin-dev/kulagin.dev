@@ -59,7 +59,7 @@ namespace :deploy do
 
       within paths.github_build_dir do
         execute :git, 'add', '.'
-        execute :git, 'commit', "-m '#{Time.now.strftime('Deploy @ %Y-%m-%d %I:%M:%S %Z')}'"
+        execute :git, 'commit', "-m '#{Time.now.strftime('Deploy @ %F %T %Z')}'"
         execute :git, 'push'
       end
     end
