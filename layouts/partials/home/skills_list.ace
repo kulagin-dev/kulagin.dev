@@ -37,12 +37,22 @@ p The languages below I'm currenlty learning one by one. As soon as my knowlege 
 
 ul
   li
+    | <strong>Elixir/Phoenix</strong> - this is what I'm curently actively learning, and I love it!
+
+  li
+    | <strong>Elm</strong> - crazy thing, but looks so sexy to me. Quick touch give some nice results, but I just don't need frontend lang.
+
+  li
     |
-      <strong>Go</strong> - two factors mixed into one here.
+      <strong>Clojure/ClojureScript</strong> - this is the next language I plan to learn. Maybe before/after Elm, it depends on how things will go.
+      There are tree reasons: get functional, ClojureScript as fronted lang and Elisp.
+
+  li
+    |
+      <strong>Go</strong> - two factors mixed into one here. (<strong>UPD Jul 2016</strong>: deep learning of Go delayed in favor of Elixir, but I'll get back to you, Go)
       First, because of Ruby is learned very well, I decided to move further and learn something really new.
       And the second factor: 'cause last years there is a trend on separating apps into microservices (which is very nice idea), I don't want to be outide of that trend.
       After some experiments and research I decided what Go will match the best for such tasks: it's simple, fast, young but with solid ecosystem already.
-
 
   li
     |
@@ -55,18 +65,10 @@ ul
       <strong>Scala</strong> - yep, I believe, what if there will be task to create something serious for JVM, I will use this language.
       It's Scala I want to use for my first Android app and backend for it (I'm looking toward <a href="https://www.playframework.com/" target="_blank">Play Framework</a>)
 
-  li
-    |
-      <strong>Clojure</strong> - this is the fourth language I plan to learn.
-      There are two reasons: get more functional and ClojureScript.
-      Read intro for <a href="#front-end">frontend section below</a> about last goal <strong>[frontend section is not written yet]</strong>.
-
-p Maybe someday I will take a closer look at Erlang (had a little experience) and Elixir + Phoenix, but have no plans for that right now.
-
 
 h3 Libs
 
-p For now I'll keep that list short <strong>[this section will be updated]</strong>: Rails, Devise, Cancancan, OmniAuth, Capistrano, Sidekiq, RSpec, Capybara, Lotus, ...
+p It's easier to list only major ones: Grape, Rails, Devise, Cancancan, OmniAuth, Capistrano, Sidekiq, RSpec, Capybara, Lotus, tons of them...
 
 
 h3 Databases
@@ -132,6 +134,9 @@ ul
   li <strong>Amazon EC2</strong>
   li <strong>Amazon S3</strong>
   li <strong>Amazon RDS</strong>
+  li <strong>Amazon SES</strong> (including DNS configuration)
+  li <strong>Amazon Elastic Beanstalk</strong>
+  li <strong>Amazon EC2 Containers</strong> (learning)
 
 p I have a little experience with Heroku, but none of my clients actually used it. Anyway, that should not be a trouble.
 
@@ -163,6 +168,4 @@ h3 Front end
 
 p
   |
-    <strong>[This section will be updated]</strong>
-
-p In short: I'm NOT looking for an anyhow frontend-related job (except short-term). Only server-side.
+    <strong>There's a lot of frontend tools I use, but I use them for my personal projects, and not looking for frontend related job. Quick fixes, nothing more. So this section I'll keep empty</strong>

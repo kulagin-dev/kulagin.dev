@@ -6,6 +6,10 @@
     a name="portfolio"
     h2.mdl-typography--text-center.mdl-typography--font-thin.mdl-typography--text-uppercase My Ruby Portfolio
 
+    p.mdl-typography--text-center
+      | Please, keep in mind, this is a list of major Ruby projects I was involved in. There's a lot of scripts/parsers and gems I've created for these years
+
+
     .vb-portfolio-showcase
       {{ range where .Data.Pages.ByWeight.Reverse "Section" "works" }}
         {{ .Render "card" }}
