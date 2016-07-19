@@ -8,7 +8,7 @@ header.mdl-layout__header
         {{ partial "shared/logo" }}
 
     .mdl-layout-title
-      | Ivan Byurgnanovskiy
+      | {{ .author }}
 
     // Add spacer, to align navigation to the right
     .mdl-layout-spacer

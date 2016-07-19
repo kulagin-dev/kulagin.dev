@@ -5,7 +5,7 @@ html lang="{{.Site.LanguageCode}}"
 
   body
     .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
-      {{ partial "shared/header" }}
+      {{ partial "shared/header" .Site.Params }}
 
       main.mdl-layout__content
 
@@ -24,4 +24,4 @@ html lang="{{.Site.LanguageCode}}"
         // END HOMEPAGE CONTENT
 
         // FOOTER
-        {{ partial "shared/footer" }}
+        {{ partial "shared/footer" .Site.Params }}
