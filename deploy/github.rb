@@ -26,7 +26,7 @@ class GithubPaths
 end
 
 namespace :build do
-  desc "Build locally for VPS"
+  desc "Build locally for Github"
   task :github do
     paths = GithubPaths.new
 
