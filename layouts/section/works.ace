@@ -5,7 +5,7 @@ html lang="{{.Site.LanguageCode}}"
 
   body
     .mdl-layout.mdl-js-layout.mdl-layout--fixed-header
-      {{ partial "shared/header" }}
+      {{ partial "shared/header" .Site.Params }}
 
       main.mdl-layout__content
 
