@@ -1,8 +1,8 @@
 head
   title {{.Site.Title}}
 
-  {{ if .RSSlink }}
-    link href="{{ .RSSlink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"
+  {{ if .RSSLink }}
+    link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}"
   {{ end }}
 
   meta charset="utf-8"

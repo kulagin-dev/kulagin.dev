@@ -5,8 +5,7 @@ author = "___TOP___"
 metaDataFormat = "yaml"
 sectionPagesMenu = "main"
 editor = ""
-disableRSS = true
-disableSitemap = true
+disableKinds = ["RSS", "sitemap"]
 
 [taxonomies]
   tag = "tags"
