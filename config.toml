@@ -1,6 +1,6 @@
 baseUrl = "http://vanburg.ru/"
 languageCode = "en-us"
-title = "Ivan Byurganovskiy personal blog"
+title = "Ivan Byurganovskiy - Freelance Ruby Backend Developer"
 author = "___TOP___"
 metaDataFormat = "yaml"
 sectionPagesMenu = "main"
