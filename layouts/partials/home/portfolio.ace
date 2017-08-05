@@ -7,7 +7,10 @@
     h2.mdl-typography--text-center.mdl-typography--font-thin.mdl-typography--text-uppercase My Ruby Portfolio
 
     p.mdl-typography--text-center
-      | Please, keep in mind, this is a list of major Ruby projects I was involved in. There's a lot of scripts/parsers and gems I've created for these years
+      |
+        Please, keep in mind, this is a list of major Ruby projects I was involved in.<br>
+        Also, I did another two backend API projects not listed here (and since they're APIs no screenshots provided, sorry).<br>
+        Plus, There's a lot of scripts/parsers and gems I've created for these years
 
 
     .vb-portfolio-showcase
