@@ -1,6 +1,6 @@
 baseUrl = "http://vanburg.ru/"
 languageCode = "en-us"
-title = "Ivan Byurganovskiy - Freelance Ruby Backend Developer"
+title = "Ivan Kulagin - Freelance Ruby Backend Developer"
 author = "___TOP___"
 metaDataFormat = "yaml"
 sectionPagesMenu = "main"
@@ -15,4 +15,4 @@ disableKinds = ["RSS", "sitemap"]
   tool = "tools"
 
 [params]
-  author = "Ivan Byurganovskiy"
+  author = "Ivan Kulagin"
