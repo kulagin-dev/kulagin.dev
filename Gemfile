@@ -5,5 +5,5 @@ source 'https://rubygems.org'
 ruby File.read(File.join(__dir__, '.ruby-version'))
 
 gem 'rake'
-gem 'sshkit'
+gem 'sshkit', '~> 1.7.1'
 gem 'foreman'
