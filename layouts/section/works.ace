@@ -9,8 +9,6 @@ html lang="{{.Site.LanguageCode}}"
 
       main.mdl-layout__content
 
-        {{ partial "shared/job_banner" }}
-
         // WORKS CONTENT
 
         .vb-grid-content.mdl-grid

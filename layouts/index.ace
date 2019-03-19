@@ -10,7 +10,6 @@ html lang="{{.Site.LanguageCode}}"
       main.mdl-layout__content
 
         {{ partial "home/intro" }}
-        {{ partial "shared/job_banner" }}
 
         // HOMEPAGE CONTENT
 
