@@ -2,7 +2,7 @@
 
 a name="the-way-i-work"
 .mdl-cell.mdl-cell--12-col
-  .vb-the-way
+  .ik-the-way
     h2.mdl-typography--text-center.mdl-typography--font-thin.mdl-typography--text-uppercase The way I work
 
     ul

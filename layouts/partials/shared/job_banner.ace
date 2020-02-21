@@ -1,13 +1,13 @@
 // JOB BANNER
 
-.vb-job-banner.vb-job-banner__hidden
-  .vb-grid-full-width.mdl-grid
+.ik-job-banner.ik-job-banner__hidden
+  .ik-grid-full-width.mdl-grid
     .mdl-cell.mdl-cell--12-col
-      .vb-job-banner--content.mdl-grid
+      .ik-job-banner--content.mdl-grid
 
         .mdl-cell.mdl-cell--12-col.mdl-cell--9-col-desktop
 
-          p.vb-job-banner--text
+          p.ik-job-banner--text
             |
               I'm currently looking for long/short term job at
               <a href="https://goo.gl/P0UdK9" target="_blank">Upwork</a> as a
@@ -23,10 +23,10 @@
 
 
         .mdl-cell.mdl-cell--12-col.mdl-cell--3-col-desktop.mdl-cell--middle
-          a.vb-job-banner--readmore.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--colored href="/#portfolio"
+          a.ik-job-banner--readmore.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--colored href="/#portfolio"
             i.material-icons subject
             | Read more
-          a.vb-job-banner--dismiss.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent
+          a.ik-job-banner--dismiss.mdl-button.mdl-js-button.mdl-button--raised.mdl-js-ripple-effect.mdl-button--accent
             i.material-icons delete
             | Dismiss
 

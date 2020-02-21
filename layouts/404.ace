@@ -13,7 +13,7 @@ html lang="{{.Site.LanguageCode}}"
 
         // 404 CONTENT
 
-        .vb-grid-content.mdl-grid
+        .ik-grid-content.mdl-grid
           .mdl-cell.mdl-cell--12-col
             h1 404: Oops, nothing here....
 

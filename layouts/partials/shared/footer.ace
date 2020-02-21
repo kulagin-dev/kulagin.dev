@@ -8,9 +8,9 @@ footer.mdl-mini-footer
       li
         a href="/works" Work
       li
-        a href="https://github.com/vanburg?tab=repositories" target="_blank" GitHub
+        a href="https://github.com/qd3v?tab=stars" target="_blank" GitHub
 
-.vb-grid-content.mdl-grid
+.ik-grid-content.mdl-grid
   .mdl-cell.mdl-cell--12-col
     p.mdl-typography--caption.mdl-typography--text-center
       |

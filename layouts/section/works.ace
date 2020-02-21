@@ -11,7 +11,7 @@ html lang="{{.Site.LanguageCode}}"
 
         // WORKS CONTENT
 
-        .vb-grid-content.mdl-grid
+        .ik-grid-content.mdl-grid
           .mdl-cell.mdl-cell--12-col
             h2.mdl-typography--text-center.mdl-typography--font-thin.mdl-typography--text-uppercase My Ruby Portfolio
 

@@ -13,7 +13,7 @@
         Plus, There's a lot of scripts/parsers and gems I've created for these years
 
 
-    .vb-portfolio-showcase
+    .ik-portfolio-showcase
       {{ range where .Data.Pages.ByWeight.Reverse "Section" "works" }}
         {{ .Render "card" }}
       {{ end }}

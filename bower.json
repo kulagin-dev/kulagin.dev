@@ -1,9 +1,9 @@
 {
-  "name": "vanburg-ru-assets",
+  "name": "qd3v-assets",
   "version": "0.1.0",
-  "homepage": "https://github.com/vanburg/ru",
+  "homepage": "https://ivan.kulagin.dev",
   "authors": [
-    "Ivan Kulagin <me@vanburg.ru>"
+    "Ivan Kulagin <ivan@kulagin.dev>"
   ],
   "private": true,
   "license": "MIT",

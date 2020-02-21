@@ -9,11 +9,11 @@
 jQuery(function() {
   var COOKIE_NAME = 'job-banner-dismissed';
   var DISMISS_PERIOD_DAYS = 7;
-  var VISIBLE_CSS_CLASS = 'vb-job-banner__visible';
-  var HIDDEN_CSS_CLASS = 'vb-job-banner__hidden';
+  var VISIBLE_CSS_CLASS = 'ik-job-banner__visible';
+  var HIDDEN_CSS_CLASS = 'ik-job-banner__hidden';
 
-  var BANNER_SELECTOR = '.vb-job-banner';
-  var BUTTON_SELECTOR = '.vb-job-banner--dismiss';
+  var BANNER_SELECTOR = '.ik-job-banner';
+  var BUTTON_SELECTOR = '.ik-job-banner--dismiss';
 
   function hideJobBanner($banner) {
     $banner.fadeOut(700).removeClass(VISIBLE_CSS_CLASS).addClass(HIDDEN_CSS_CLASS);

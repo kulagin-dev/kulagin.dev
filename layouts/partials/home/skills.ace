@@ -1,6 +1,6 @@
 // SKILLS LIST
 
-.vb-grid-content.mdl-grid
+.ik-grid-content.mdl-grid
   .mdl-cell.mdl-cell--12-col
 
     a name="skills"

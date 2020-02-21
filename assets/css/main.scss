@@ -17,20 +17,20 @@ $grid-desktop-breakpoint: 840px;
 
 // Showing top menu only when it should fit
 @media (max-width: $grid-desktop-breakpoint - 1) {
-  .vb-top-navigation--tablet-screen-and-larger {
+  .ik-top-navigation--tablet-screen-and-larger {
     display: none;
   }
 }
 
-.vb-grid-full-width {
+.ik-grid-full-width {
   max-width: 960px;
 }
 
-.vb-grid-content {
+.ik-grid-content {
   max-width: 760px;
 }
 
-.vb-avatar {
+.ik-avatar {
   width: 119px;
   height: auto;
   border-radius: 50%;
@@ -38,26 +38,26 @@ $grid-desktop-breakpoint: 840px;
   margin: 0 auto;
 }
 
-.vb-logo {
+.ik-logo {
   padding: 0;
   line-height: 1;
 
-  .vb-logo__image {
+  .ik-logo__image {
     width: 24px;
     height: 24px;
     margin-right: 12px;
   }
 
-  .vb-logo__path {
+  .ik-logo__path {
     fill: #fff;
   }
 }
 
-.vb-home-intro p {
+.ik-home-intro p {
   margin: 0;
 }
 
-.vb-job-banner {
+.ik-job-banner {
 
   &--content {
     background: #ebebeb;
@@ -84,7 +84,7 @@ $grid-desktop-breakpoint: 840px;
   }
 }
 
-.vb-portfolio-showcase {
+.ik-portfolio-showcase {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -107,6 +107,6 @@ $grid-desktop-breakpoint: 840px;
   }
 }
 
-.vb-portfolio-thumb-img {
+.ik-portfolio-thumb-img {
   width: 100%;
 }

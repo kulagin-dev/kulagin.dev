@@ -24,7 +24,7 @@
     .mdl-cell.mdl-cell--6-col.mdl-cell--4-col-phone.mdl-cell--4-col-tablet
       p
         a href="/img/portfolio/{{$slug}}_{{$image}}.png" target="_blank"
-          img.vb-portfolio-thumb-img.mdl-shadow--6dp src="/img/portfolio/thumbs/{{$slug}}_{{$image}}.png"
+          img.ik-portfolio-thumb-img.mdl-shadow--6dp src="/img/portfolio/thumbs/{{$slug}}_{{$image}}.png"
 
     .mdl-cell.mdl-cell--6-col
       {{ $.Content }}
@@ -39,7 +39,7 @@
       .mdl-cell.mdl-cell--6-col.mdl-cell--4-col-phone.mdl-cell--4-col-tablet
         p
           a href="/img/portfolio/{{$slug}}_{{$image}}.png" target="_blank"
-            img.vb-portfolio-thumb-img.mdl-shadow--6dp src="/img/portfolio/thumbs/{{$slug}}_{{$image}}.png"
+            img.ik-portfolio-thumb-img.mdl-shadow--6dp src="/img/portfolio/thumbs/{{$slug}}_{{$image}}.png"
     {{ end }}
 
     .mdl-cell.mdl-cell--12-col

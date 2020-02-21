@@ -1,7 +1,7 @@
 // MY STORY
 .mdl-cell.mdl-cell--12-col
   a name="story"
-  .vb-my-story
+  .ik-my-story
     h2.mdl-typography--text-center.mdl-typography--font-thin.mdl-typography--text-uppercase My story
 
     h3 The beginning

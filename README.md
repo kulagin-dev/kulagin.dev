@@ -1,6 +1,6 @@
 # About
 
-This is a repo of [my static site](http://vanburg.ru)
+This is a repo of [my static site](https://ivan.kulagin.dev)
 
 # TODO
 
