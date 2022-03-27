@@ -32,3 +32,5 @@
 /static/assets/js
 
 /themes
+/.hugo_build.lock
+*.log

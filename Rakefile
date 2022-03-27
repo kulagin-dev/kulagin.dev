@@ -13,26 +13,23 @@
 # RAKE TASK PARAMS
 # http://stackoverflow.com/a/825864/1592582
 
-require 'sshkit'
-require 'sshkit/dsl'
-
 namespace :build do
 
   # Abstract build task, requires build_dir as first arg
-  task :build, [:build_dir] do |t, args|
+  task :build, [:build_dir] do |_task, args|
     run_locally do
       execute :hugo, '--destination', args[:build_dir]
 
       # Brunch compilation. Setting env var using `with`.
       # See brunch config for details
-      with brunch_env: :production do
-        execute :brunch, 'build'
-      end
+      # with brunch_env: :production do
+      #   execute :brunch, 'build'
+      # end
     end
   end
 
   # Abstract task, requires build_dir as first arg
-  task :rm_dir, [:build_dir] do |t, args|
+  task :rm_dir, [:build_dir] do |_task, args|
     run_locally do
       if test "[ -d #{args[:build_dir]} ]"
         execute :rm, '-Rf', args[:build_dir]

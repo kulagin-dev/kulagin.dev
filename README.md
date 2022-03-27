@@ -16,13 +16,17 @@ This is a repo of [my static site](https://ivan.kulagin.dev)
 
 * [ ] add lightbox for images ([this one?](https://github.com/noelboss/featherlight/))
 * [ ] add books list
-* [x] add Lua to a list of languages (*2015-12-24*)
 
 # Dependencies
+
+``asdf plugin add hugo nodejs ruby``
 
 - [Hugo](http://gohugo.io/)
 - [Google Material Design Lite](http://www.getmdl.io/)
 - [Brunch](http://brunch.io/)
-- Ruby:
-  - Foreman
-  - SSHKit
+
+# package.json
+
+- [``node-sass``/``nodejs`` versions](https://github.com/sass/node-sass#node-sass)
+- ``~version``: “Approximately equivalent to version”, will update you to all future patch versions, without incrementing the minor version. ~1.2.3 will use releases from 1.2.3 to <1.3.0.
+- ``^version``: “Compatible with version”, will update you to all future minor/patch versions, without incrementing the major version. ^2.3.4 will use releases from 2.3.4 to <3.0.0

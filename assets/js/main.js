@@ -6,14 +6,14 @@
  * - replace fades with CSS animation
  */
 
-jQuery(function() {
-  var COOKIE_NAME = 'job-banner-dismissed';
-  var DISMISS_PERIOD_DAYS = 7;
-  var VISIBLE_CSS_CLASS = 'ik-job-banner__visible';
-  var HIDDEN_CSS_CLASS = 'ik-job-banner__hidden';
+jQuery(function () {
+  const COOKIE_NAME         = 'job-banner-dismissed';
+  const DISMISS_PERIOD_DAYS = 7;
+  const VISIBLE_CSS_CLASS   = 'ik-job-banner__visible';
+  const HIDDEN_CSS_CLASS    = 'ik-job-banner__hidden';
 
-  var BANNER_SELECTOR = '.ik-job-banner';
-  var BUTTON_SELECTOR = '.ik-job-banner--dismiss';
+  const BANNER_SELECTOR = '.ik-job-banner';
+  const BUTTON_SELECTOR = '.ik-job-banner--dismiss';
 
   function hideJobBanner($banner) {
     $banner.fadeOut(700).removeClass(VISIBLE_CSS_CLASS).addClass(HIDDEN_CSS_CLASS);
@@ -33,14 +33,14 @@ jQuery(function() {
     Cookies.set(COOKIE_NAME, 1, {expires: DISMISS_PERIOD_DAYS});
   }
 
-  var $banner = $(BANNER_SELECTOR);
-  var $dismissButton = $(BUTTON_SELECTOR, $banner);
-  var dismissed = isDismissed();
+  const $banner        = $(BANNER_SELECTOR);
+  const $dismissButton = $(BUTTON_SELECTOR, $banner);
+  const dismissed      = isDismissed();
 
   if (!dismissed) {
     showJobBanner($banner);
 
-    $dismissButton.click(function() {
+    $dismissButton.click(function () {
       hideJobBanner($banner);
       setDismissed();
     });
