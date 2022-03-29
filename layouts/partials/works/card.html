@@ -1,0 +1,32 @@
+{{ "<!-- PORTFOLIO ITEM CARD -->" | safeHTML }}
+
+{{ $slug := .Slug }}
+{{ $shortAbout := .Params.shortabout }}
+
+<div class="ik-portfolio-showcase--item-card mdl-card mdl-shadow--6dp">
+
+  <div class="mdl-card__title">
+    <div class="mdl-card__title-text">{{ .Title }}</div>
+  </div>
+
+  <div class="mdl-card__media">
+    <a class="ik-portfolio-showcase--item-card-thumb-link" href="/works/#{{$slug}}">
+      {{ $image := (index .Params.images 0) }}
+      <img class="ik-portfolio-showcase--item-card-thumb-img" src="/img/portfolio/thumbs/{{$slug}}_{{$image}}.png"/>
+    </a>
+  </div>
+
+  <div class="mdl-card__supporting-text">{{ $shortAbout }}</div>
+
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"
+       href="/works/#{{$slug}}"> Read more</a>
+
+    {{ with $url := .Params.projecturl }}
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="{{$url}}"
+       target="_blank">Visit</a>
+    {{ end }}
+  </div>
+</div>
+
+{{ "<!-- END OF PORTFOLIO ITEM CARD -->" | safeHTML }}

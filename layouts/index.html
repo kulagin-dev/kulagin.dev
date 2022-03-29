@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{.Site.LanguageCode}}">
+
+{{ partial "shared/head.html" . }}
+
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  {{ partial "shared/header.html" .Site.Params }}
+
+  <main class="mdl-layout__content">
+
+    {{ partial "home/intro.html" }}
+
+    <!-- HOMEPAGE CONTENT -->
+
+    {{ partial "home/portfolio.html" . }}
+
+    <div class="ik-grid-content mdl-grid">
+      {{ partial "home/the_way.html" }}
+      {{ partial "home/skills.html" }}
+      {{ partial "home/my_story.html" }}
+    </div>
+
+    <!-- END HOMEPAGE CONTENT -->
+
+
+    {{ partial "shared/footer.html" .Site.Params }}
+
+  </main>
+</div>
+</body>
+</html>

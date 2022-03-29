@@ -1,2 +1,2 @@
-hugo: hugo server -w --bind=0.0.0.0
+hugo: hugo server -D --bind=0.0.0.0 --navigateToChanged
 assets: npx brunch watch
