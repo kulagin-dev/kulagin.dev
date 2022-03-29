@@ -2,21 +2,21 @@
   "name": "qd3v-assets",
   "description": "Assets for https://ivan.kulagin.dev",
   "author": "Ivan Kulagin",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "ignore": [
     "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "node_modules"
   ],
   "dependencies": {
-    "brunch": "^2.8.2",
-    "clean-css-brunch": "^2.0.0",
-    "gzip-brunch": "^1.3.0",
-    "javascript-brunch": "^2.0.0",
-    "sass-brunch": "^2.6.3",
-    "uglify-js-brunch": "^2.0.1"
+    "brunch": "^4.0.0",
+    "clean-css-brunch": "^3.0.0",
+    "gzip-brunch": "^2.0.0",
+    "javascript-brunch": "^2.10.0",
+    "js-cookie": "^3.0.1",
+    "material-design-icons": "^3.0.1",
+    "material-design-lite": "^1.3.0",
+    "sass-brunch": "^3.0.1",
+    "uglify-js-brunch": "^2.10.0"
   }
 }

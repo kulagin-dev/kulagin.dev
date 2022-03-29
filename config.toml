@@ -1,11 +1,20 @@
+# Config: https://gohugo.io/getting-started/configuration/#all-configuration-settings
+
 baseUrl = "/"
+uglyurls = false
 languageCode = "en-us"
 title = "Ivan Kulagin - Freelance Backend Developer"
 author = "___TOP___"
 metaDataFormat = "yaml"
 sectionPagesMenu = "main"
 editor = ""
-disableKinds = ["RSS", "sitemap"]
+enableGitInfo = true
+enableRobotsTXT = true
+timeZone = "Europe/Moscow"
+
+# We don't need these, disable warnings (don't disable "page")
+disableKinds = ["RSS", "sitemap", "taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
 
 [taxonomies]
   tag = "tags"
@@ -14,5 +23,14 @@ disableKinds = ["RSS", "sitemap"]
   concept = "concepts"
   tool = "tools"
 
+# Will be available via .Site.Params
 [params]
   author = "Ivan Kulagin"
+
+[minify]
+  [minify.tdewolff]
+    [minify.tdewolff.css]
+      keepCSS2 = true
+      precision = 0
+    [minify.tdewolff.html]
+      keepComments = false

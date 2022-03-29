@@ -1,0 +1,26 @@
+<!-- PORTFOLIO SHOWCASE -->
+
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--12-col">
+
+    <a id="portfolio"></a>
+    <h2 class="mdl-typography--text-center mdl-typography--font-thin mdl-typography--text-uppercase">My Ruby Portfolio</h2>
+
+    <p class="mdl-typography--text-center">
+      Please, keep in mind, this is a list of major Ruby projects I was involved in.<br>
+      Also, I did another two backend API projects not listed here (and since they're APIs no screenshots provided,
+      sorry).<br>
+      Plus, There's a lot of scripts/parsers and gems I've created for these years
+    </p>
+
+    <div class="ik-portfolio-showcase">
+      {{ range (where .Site.RegularPages "Section" "works").ByWeight.Reverse }}
+        {{ partial "works/card.html" . }}
+      {{ else }}
+        <h1>Oops</h1>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<!-- END OF PORTFOLIO SHOWCASE -->

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{.Site.LanguageCode}}">
+
+{{ partial "shared/head.html" . }}
+
+<body>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  {{ partial "shared/header.html" .Site.Params }}
+
+  <main class="mdl-layout__content">
+
+    <!-- WORKS CONTENT -->
+
+    <div class="ik-grid-content mdl-grid">
+      <div class="mdl-cell mdl-cell--12-col">
+        <h2 class="mdl-typography--text-center mdl-typography--font-thin mdl-typography--text-uppercase">My Ruby Portfolio</h2>
+      </div>
+
+      {{ range .Data.Pages.ByWeight.Reverse }}
+      {{ .Render "single" }}
+      {{ end }}
+
+    </div>
+
+    <!-- END WORKS CONTENT -->
+
+    {{ partial "shared/footer" .Site.Params }}
+
+  </main>
+</div>
+</body>
+</html>

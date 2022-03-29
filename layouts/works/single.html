@@ -1,0 +1,74 @@
+<!-- PORTFOLIO ITEM -->
+
+{{ $slug := .Slug }}
+{{ $shortAbout := .Params.shortabout }}
+
+<!--
+TODO: DRY
+TODO: Nothing will showup if no images attached (skipping that case for now)
+
+NOTE: Remember: MDL has different col nums for each dev:
+see http://www.getmdl.io/components/index.html#layout-section/grid
+-->
+
+{{ "<!-- PORTFOLIO ITEM -->" | safeHTML }}
+
+<div class="mdl-cell mdl-cell--12-col">
+  <a id="{{$slug}}"></a>
+  <h3>{{ .Title }}</h3>
+</div>
+
+{{ with $images := .Params.images }}
+
+  {{ $len := len $images }}
+
+  {{ if eq $len 1 }}
+
+  {{ $image := index $images 0 }}
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--4-col-tablet">
+    <p>
+      <a href="/img/portfolio/{{$slug}}_{{$image}}.png" target="_blank">
+        <img class="ik-portfolio-thumb-img mdl-shadow--6dp" src="/img/portfolio/thumbs/{{$slug}}_{{$image}}.png"/>
+      </a>
+    </p>
+  </div>
+
+  <div class="mdl-cell mdl-cell--6-col">
+    {{ $.Content }}
+
+    {{ with $url := $.Params.projecturl }}
+    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="{{$url}}"
+       target="_blank">Visit</a>
+    {{ end }}
+  </div>
+
+  {{ else if eq $len 4 }}
+
+  {{ range $image := $images }}
+  <div class="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--4-col-tablet">
+    <p>
+      <a href="/img/portfolio/{{$slug}}_{{$image}}.png" target="_blank">
+        <img class="ik-portfolio-thumb-img mdl-shadow--6dp" src="/img/portfolio/thumbs/{{$slug}}_{{$image}}.png"/>
+      </a>
+    </p>
+  </div>
+  {{ end }}
+
+  <div class="mdl-cell mdl-cell--12-col">
+    {{ $.Content }}
+
+    {{ with $url := $.Params.projecturl }}
+    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" href="{{$url}}"
+       target="_blank">Visit</a>
+    {{ end }}
+  </div>
+
+  {{ else }}
+  <p>BUG: Unknown images count</p>
+  {{ end }}
+
+  {{ else }}
+  <p>BUG: No images array set</p>
+  {{ end }}
+
+{{ "<!-- END OF PORTFOLIO ITEM -->" | safeHTML }}
