@@ -4,24 +4,23 @@
 # or operating system, you probably want to add a global ignore instead:
 # git config --global core.excludesfile ~/.gitignore_global
 
+# Ignore .DS_store file
+.DS_Store
+
 # Ignore bundler config
+/_stage
 /.bundle
 
 # Ignore the build directory
 /build
-/build_github
+/resources
 
 # Ignore cache
 /.sass-cache
 /.cache
 
-# Ignore .DS_store file
-.DS_Store
-
-/bower_components
 /node_modules
 
-/stage
 /public
 
 # Do not track links to bower components
