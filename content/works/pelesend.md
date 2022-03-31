@@ -4,8 +4,12 @@ slug: pelesend
 title: Pelesend corporate site
 projectUrl: http://www.pelesend.com/
 shortAbout: Refactoring and UI improvements of Pelesend corporate site
+testimonial: Person with really good programming skills and fast learning, thanks!
+main_focus:
+  - coding
 images:
-  - home
+  - home.png
+showcaseThumb: home.png
 ---
 
 Almost completely rewritten backend (Ruby on Rails based) ugly source code,
@@ -21,4 +25,4 @@ Results of refactoring:
 98880 deletions(-)
 ```
 
-Less code, less trouble :)
+Less code - less trouble :)

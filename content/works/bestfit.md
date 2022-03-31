@@ -3,11 +3,15 @@ weight: 4
 slug: bestfit
 title: Apple pass manager
 shortAbout: Apple pass WYSIWYG designer with passbook API integration
+main_focus:
+  - coding
+  - frontend
 images:
-  - home
-  - primary
-  - versions
-  - versions_schedule
+  - home.png
+  - primary.png
+  - versions.png
+  - versions_schedule.png 
+showcaseThumb: home.png
 ---
 
 AngularJs + Ruby on Rails project with integration with Apple Passbook API and Apple push service.

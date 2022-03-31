@@ -11,8 +11,8 @@
 
   <div class="mdl-card__media">
     <a class="ik-portfolio-showcase--item-card-thumb-link" href="/works/#{{$slug}}">
-      {{ $image := (index .Params.images 0) }}
-      <img class="ik-portfolio-showcase--item-card-thumb-img" src="/img/portfolio/thumbs/{{$slug}}_{{$image}}.png"/>
+      {{ $showcaseThumb := .Params.showcaseThumb }}
+      <img class="ik-portfolio-showcase--item-card-thumb-img" src="/img/portfolio/thumbs/{{$slug}}_{{$showcaseThumb}}"/>
     </a>
   </div>
 
