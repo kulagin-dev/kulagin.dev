@@ -4,11 +4,14 @@ slug: instamotor
 title: Instamotor Inc.
 projectUrl: https://instamotor.com/
 shortAbout: Refactoring and extending communication layer using Twilio
+main_focus:
+  - coding
 images:
-  - home
-  - twilio_relay
-  - twilio_uml
-  - working
+  - home.png
+  - twilio_relay.png
+  - twilio_uml.png
+  - working.png 
+showcaseThumb: home.png
 ---
 
 The project consists of two parts: main grape-based API backend and web crawler, gathering vehicle sell postings from the web.

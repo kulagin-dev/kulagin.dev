@@ -1,21 +1,22 @@
 # About
 
-This is a repo of [my static site](https://ivan.kulagin.dev)
+Repository of [my static website](https://ivan.kulagin.dev)
 
 # TODO
 
 **Primary**
 
-* [ ] deploy with [Github actions](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
-* [ ] screenshot captions?
+* [ ] add lightbox for images ([this one?](https://github.com/noelboss/featherlight/))
+* [X] deploy with [Github actions](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
 * [x] contacts (*2015-12-24*)
 * [x] instamotor about (*2015-12-24*)
 * [x] thumbs links (*2015-12-24*)
 * [x] get back metrics (*2015-12-24*)
 
-**Secondary**
+  **Secondary**
 
-* [ ] add lightbox for images ([this one?](https://github.com/noelboss/featherlight/))
+* [ ] get rid of ``showcaseThumb`` variable, use index 0 unless defined
+* [ ] screenshot captions?
 * [ ] add books list
 
 # Dependencies
@@ -24,13 +25,6 @@ This is a repo of [my static site](https://ivan.kulagin.dev)
 
 - [Hugo](http://gohugo.io/)
 - [Google Material Design Lite](http://www.getmdl.io/)
-- [Brunch](http://brunch.io/)
-
-# package.json
-
-- [``node-sass``/``nodejs`` versions](https://github.com/sass/node-sass#node-sass)
-- ``~version``: “Approximately equivalent to version”, will update you to all future patch versions, without incrementing the minor version. ~1.2.3 will use releases from 1.2.3 to <1.3.0.
-- ``^version``: “Compatible with version”, will update you to all future minor/patch versions, without incrementing the major version. ^2.3.4 will use releases from 2.3.4 to <3.0.0
 
 # SHORT HUGO REMINDER
 
@@ -40,3 +34,9 @@ This is a repo of [my static site](https://ivan.kulagin.dev)
 - `$` has special significance in your templates. $ is set to the starting value of . (“the dot”) by default. This is a documented feature of Go text/template. This means you have access to the global context from anywhere. 
 - ``{{- .Title -}}`` trim whitespace (works with ``{{- range ... -}}...{{- end --}}`` too
 - [Go Templates](https://pkg.go.dev/text/template) support {{/* and */}} to open and close a comment block. Nothing within that block will be rendered.
+
+# package.json
+
+- [``node-sass``/``nodejs`` versions](https://github.com/sass/node-sass#node-sass)
+- ``~version``: “Approximately equivalent to version”, will update you to all future patch versions, without incrementing the minor version. ~1.2.3 will use releases from 1.2.3 to <1.3.0.
+- ``^version``: “Compatible with version”, will update you to all future minor/patch versions, without incrementing the major version. ^2.3.4 will use releases from 2.3.4 to <3.0.0

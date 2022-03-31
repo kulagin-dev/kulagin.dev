@@ -4,11 +4,16 @@ slug: higgins
 title: Higgins MD 420
 projectUrl: https://www.higginsmd420.com/
 shortAbout: Refactoring and developing web site for Medical Marijuana Evaluation Clinic
+testimonial: I would happily with Ivan in the future!
+main_focus:
+  - coding
+  - frontend
 images:
-  - home
-  - step1
-  - step2
-  - aa_and_pdf
+  - home.png
+  - step1.png
+  - step2.png
+  - aa_and_pdf.png
+showcaseThumb: home.png
 ---
 
 Heavy refactoring/cleanup/drying of legacy code and new features implementation.
