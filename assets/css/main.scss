@@ -110,3 +110,15 @@ $grid-desktop-breakpoint: 840px;
 .ik-portfolio-thumb-img {
   width: 100%;
 }
+
+.ik-mdl-card--full-width {
+  width: auto;
+  min-height: 0;
+}
+
+.ik-mdl-card__title {
+  color: $color-main;
+  height: 24rem;
+  background: url('/img/putins-war.jpg') center / cover;
+}
+
