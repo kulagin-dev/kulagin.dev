@@ -9,7 +9,7 @@
 
     {{ if isset . "client" }}
     <div class="ik-testimonials-mdl-card__client mdl-card__supporting-text ">
-      Client: {{ .client }}
+      {{ .client }}
     </div>
     {{ end }}
 
@@ -21,7 +21,17 @@
     </div>
     {{ end }}
 
-    <!-- main focus here -->
+    {{ if isset . "main_focus" }}
+    <div class="mdl-card__actions mdl-card--border">
+      <div class="mdl-card__supporting-text">
+      {{ range .main_focus }}
+        <span class="mdl-chip">
+          <span class="mdl-chip__text">{{ . }}</span>
+        </span>
+      {{ end }}
+      </div>
+    </div>
+    {{ end }}
 
     {{ with $url := .url }}
     <div class="mdl-card__actions mdl-card--border">
