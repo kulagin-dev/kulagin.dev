@@ -1,0 +1,87 @@
+---
+# TODO: Probably I should get all clients names from Upwork where that possible
+# Data doc: https://gohugo.io/templates/data-templates/
+# YAML Multiline strings: https://alisoftware.github.io/yaml/2021/08/19/yaml-part2-strings/
+
+- job: Multi-tenant Rails application stack upgrade
+  description: There were a hand-made per-tenant theme application core feature that required special attention. Upgraded Rails v3.2 to v5.2, and holding frontend dependencies hell under control
+  client: Crowd Trust Deed
+  url: https://crowdtrustdeed.com
+  testimonial: Great service from Ivan! Highly recommended for knowledge in RoR!
+  main_focus: [coding, upgrade]
+
+- job: Port ESPN results scraper script to Ruby
+  description: Take the scraper logic written on Python and make it work the ruby way with its amazing expressiveness. Since this is a scraper, heavy using of ``webmock``/``VCR`` done for testing
+  testimonial: Excellent developer and communicator, highly highly recommend
+  main_focus: [coding]
+
+- job: Upgrade Rails application to be able run on Heroku's cedar-18 stack instead of cedar-14
+  url: https://staging-sell.herokuapp.com/
+  testimonial: I really enjoyed working with Ivan. He helped me meet my goals by making suggestions to change what I was originally asking for in a way that would better meet my goals than what I thought I needed. I really appreciated his ability to problem solve and to help get the job done right! I would absolutely recommend and hire Ivan again!!
+  main_focus: [devops, upgrade]
+
+# Moved down similar job ^^^
+
+- job: Various Active Admin/JS/CSS bug fixes and make layout mobile-friendly
+  client: Remotech
+  url: https://remotech.herokuapp.com/
+  description: Data normalization (including PG's enum columns), search query performance improvements, Bootstrap v3 to v4 upgrade
+  testimonial: Great work!
+  main_focus: [coding, performance, upgrade]
+
+- job: Help client with setting up OS X dev environment and fix well-known nokogiri gem build issue
+  testimonial: He was very patient, very informative, and was a pleasure to work with. I would definitely hire Ivan again.
+  main_focus: [consultation]
+
+- job: Quickly found and fix the issue related to Sabre API requests limit hit on production servers
+  client: Sixtravel
+  testimonial: Ivan was great! he was able to jump on a crucial situation with our production server and fix it in a short amount of time! great developer
+  main_focus: [consultation]
+
+- job: Add correct autodetection of different UTF encodings of imported CSV files
+  client: Gerard Beugelink
+  testimonial: Ivan is very quick finding and proposing his solution. In addition he implements the best solution directly after agreement. Likely he has tested the solution in advance because the implementation works in one time flawless. Thanks Ivan and hope to see you on our next project.
+  main_focus: [coding]
+
+- job: Another CSV encoding autodetection task
+  client: Bjorn Kristian Haugerud
+  testimonial: I had a headache solving a problem with reading badly formatted files containing foreign letters programatically. Ivan quickly helped me solve my problem, and gave great feedback as to what the actual challenge was. In addition to getting my problem solved, I gained valuable insight for use in later cases if or when I run into similar issues. Great work, thank you very much!
+  main_focus: [coding]
+
+- job: Make ridiculously old Ruby on Rails app work on modern stack
+  describe: The goal was to migrate very old RoR application targeted to Ruby v1.8, clean the code mess they had in gz archive, and deploy it
+  testimonial: Ivan was a grad help to us in getting bag a legacy web system based on ruby. Good and open communication. Thanks a lot!
+  main_focus: [coding, devops, upgrade]
+
+- job: Several bug fixes in Rail app (OAuth for several providers, routing)
+  testimonial: Ivan gave me frank expert opinion and helped with project core things- i'm satisfied
+  main_focus: [coding]
+
+- job: Adding new features to the gifmo application (kind of tik-tok)
+  testimonial: WOW! Very Skilled RoR Developer!!!
+  main_focus: [coding]
+
+- job: Refactor Ruby on Rails code to meet best Ruby/OOP practices
+  testimonial: Ivan worked quickly and was very professional. Excellent refactoring work and knowledge of Rubocopy. Highly recommend !
+  main_focus: [coding, refactoring]
+
+# TODO: Recall and ddd more meaning in job titles below
+
+- job: New Ruby on Rails app features development
+  testimonial: Understood requirements of project, and executed on requirements based on terms agreed upon
+  main_focus: [coding]
+
+# https://www.upwork.com/ab/f/contracts/18338312#messages
+- job: New Ruby on Rails app features development, deployment setup
+  testimonial: Great job and fast work and good communication
+  main_focus: [coding, devops]
+
+# TODO: Recall more details here: https://www.upwork.com/ab/f/contracts/15218151#messages
+- job: New Ruby on Rails app features development
+  testimonial: Ivan was reliable and constructive member of our team. I highly recommend him to anyone looking for a developer
+  main_focus: [coding]
+
+- job: Upgrade Rails application to be able run on Heroku's cedar-18 stack instead of cedar-14
+  testimonial: Upgrade RoR 3.2 project to 4.2 and Heroku cedar-14 to cedar-18 - excellent fast and good work - good availability and great response
+  main_focus: [coding, devops, upgrade]
+
