@@ -62,8 +62,14 @@
   main_focus: [coding]
 
 - job: Refactor Ruby on Rails code to meet best Ruby/OOP practices
-  testimonial: Ivan worked quickly and was very professional. Excellent refactoring work and knowledge of Rubocopy. Highly recommend !
+  testimonial: Ivan worked quickly and was very professional. Excellent refactoring work and knowledge of Rubocopy. Highly recommend!
   main_focus: [coding, refactoring]
+
+# This one had the same goals as above ^^^
+
+- job: Upgrade Rails application to be able run on Heroku's cedar-18 stack instead of cedar-14
+  testimonial: Upgrade RoR 3.2 project to 4.2 and Heroku cedar-14 to cedar-18 - excellent fast and good work - good availability and great response
+  main_focus: [coding, devops, upgrade]
 
 # TODO: Recall and ddd more meaning in job titles below
 
@@ -80,8 +86,3 @@
 - job: New Ruby on Rails app features development
   testimonial: Ivan was reliable and constructive member of our team. I highly recommend him to anyone looking for a developer
   main_focus: [coding]
-
-- job: Upgrade Rails application to be able run on Heroku's cedar-18 stack instead of cedar-14
-  testimonial: Upgrade RoR 3.2 project to 4.2 and Heroku cedar-14 to cedar-18 - excellent fast and good work - good availability and great response
-  main_focus: [coding, devops, upgrade]
-
