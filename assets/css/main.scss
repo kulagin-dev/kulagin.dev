@@ -116,12 +116,30 @@ $grid-desktop-breakpoint: 840px;
   min-height: 0;
 }
 
-.ik-mdl-card__title {
+.ik-putins-war-mdl-card__title {
   color: $color-main;
   height: 24rem;
   background: url('/img/putins-war.jpg') center / cover;
+
+  &__supporting-text {
+    width: auto;
+  }
 }
 
-.ik-putins-war-mdl-card__supporting-text {
-  width: auto;
+.ik-testimonials-mdl-card {
+  &__testimonial {
+    font-weight: bold;
+    font-size: larger;
+  }
+  &__client {
+    font-style: italic;
+  }
+}
+
+.ik-testimonials-showcase {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
 }
