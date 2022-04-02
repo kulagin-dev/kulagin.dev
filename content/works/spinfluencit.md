@@ -24,7 +24,7 @@ Long-term API project, where I was a head developer of backend side of two appli
 - one DJ's desktop app which DJ use to notify the crowd the track he's playing, respond to music requests, upload his music collection metadata people able to search in, etc. 
 - and the second app is a mobile app for party guests, where people can order, vote, like the currently playing track, send tips to DJ, search the DJ's music collection etc. 
 
-Initially the app were built on Ruby on Rails, but soon we decided to replace it with **Grape**, just because we were not need Rails beast for API, that migration increased performance a lot. As a free bonus we've got a **swagger docs** for API for free.  **Hanami**  (formerly Lotusrb)wasn't mature enough yet, but today I'd definitely use it instead (or even clean Rack app), additionally replacing ActiveRecord which I consider as an antipattern for everything but MVP.
+Initially the app were built on Ruby on Rails, but soon we decided to replace it with **Grape**, just because we were not need Rails beast for API, that migration increased performance a lot. As a free bonus we've got a **swagger docs** for API for free.  **Hanami**  (formerly Lotusrb) wasn't mature enough yet, but today I'd definitely use it instead (or even clean Rack app), additionally replacing ActiveRecord which I consider as an antipattern for everything but MVP.
 
 Interesting design decisions/stack used:
 
