@@ -149,7 +149,6 @@
 <ul>
 
   <li><strong>Tools</strong>
-
     <ul>
       <li>
         <a href="https://www.terraform.io/" target="_blank"><strong>Terraform</strong></a> - yeah, this one took Cloud provisioning to the next level! Fantastic tool I'm using a lot for any cloud environment setup/configuration. The only my personal wish is to have elegant multi-env feature build-in. At the moment it's implemented quite clumsy, and because of that it becomes especially hard to support for really large projects
@@ -170,7 +169,10 @@
         <a href="https://github.com/mina-deploy/mina" target="_blank">Mina</a>, but there's no sense to use it when you have Ansible now)
       </li>
       <li>
-        <a href="https://www.packer.io/" target="_blank"><strong>Packer</strong></a> - if you need to bring machines asap, Packer is a way to go, nice and easy tool
+        <a href="https://www.nomadproject.io/" target="_blank"><strong>Nomad/Vault/Consul</strong></a> - perfect trio when you don't want feature-bloated k8s. In my opinion, Nomad is really underrated because of k8s hype. Hashicorp are really cool guys, I love their products!
+      </li>
+      <li>
+        <a href="https://www.packer.io/" target="_blank"><strong>Packer</strong></a> - if you need to spin up more virtual machines ASAP, Packer is a way to go, nice and easy tool
       </li>
       <li>
         <a href="https://www.vagrantup.com/" target="_blank"><strong>Vagrant</strong></a> - any fancy multi-machine configuration (very useful for networking prototyping). Paired with Ansible provisioning, these two form a very powerful tool.
@@ -203,9 +205,9 @@
           </li>
           <li><strong>Amazon EC2 Containers</strong>
           </li>
-          <li><strong>Amazon CloudFront</strong> - actually I needed it only once after migrated to Terraform
-          </li>
           <li><strong>Amazon CloudWatch</strong>
+          </li>
+          <li><strong>Amazon CloudFormation</strong> - actually I needed it only once after migrated to Terraform
           </li>
         </ul>
       </li>
