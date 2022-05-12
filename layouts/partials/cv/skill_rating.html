@@ -1,0 +1,11 @@
+{{ partial "cv/block_header" (.grp | humanize) }}
+
+<div class="flex flex-col">
+
+  {{ range .data }}
+  <div class="flex flex-row justify-between">
+    <div class="text-sm">{{ .title }}</div>
+    <div class="self-end px-2 text-sm rounded-full h-fit bg-lime-{{ add (int (.level)) 2 }}00 text-white font-semibold font-accent">{{ .level }}</div>
+  </div>
+  {{ end }}
+</div>

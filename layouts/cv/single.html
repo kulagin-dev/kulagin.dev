@@ -1,0 +1,187 @@
+{{ define "main" }}
+
+
+<div class="grid grid-cols-12 gap-3 bg-secondary-200">
+
+  <div class="col-span-3 pt-3">
+    <img class="block h-24 mx-auto rounded-full outline outline-1 outline-secondary-700" src="/assets/avatar.png" alt="{{ .Site.Params.author }}"/>
+  </div>
+
+  <div class="col-span-9 pt-3 pr-3">
+    <h2 class="text-2xl font-sans font-semibold text-secondary-700">{{ .Params.headline }}</h2>
+  </div>
+
+
+  <div class="col-span-3 pb-3">
+    <h1 class="text-center text-secondary-700 text-4xl font-sans font-semibold mb-3">{{ .Site.Params.author }}</h1>
+    <h3 class="text-center text-secondary-700 text-base font-sans font-semibold">https://kulagin.dev</h3>
+    <h3 class="text-center text-secondary-700 text-base font-sans font-semibold">t.me/ivan_kulagin</h3>
+  </div>
+
+  <div class="col-span-9 pr-3 pb-3">
+    <p class="font-sans ">
+      {{ $.Site.Data.cv.about }}
+      {{ .Params.lookingFor | markdownify }}
+    </p>
+  </div>
+</div>
+
+{{ partial "cv/block_header" "Few important notes on my relocation" }}
+
+<div class="grid grid-cols-2 mb-3 gap-3 text-sm">
+  <p class="col-span-1 text-sm">
+    Just after Putin began this treacherous war against Ukraine, I flew away to Turkey to find out how to get residence permission there.
+    I got all the information, local bank account, and papers needed, but my 2 months legal stay period ended before I sent everything to migration services.
+    Additionally of course I have few big things to finish here in Russia (like selling flat and car) before relocate completely
+  </p>
+  <p class="col-span-1 text-sm">
+    Last 10 years I work on Upwork exclusively, with exception of few long-term direct contracts outside Upwork.
+    So all my work history, testimonials, etc you can find on my Upwork profile page, or just visit my website for an illustrated list of major projects I worked with detailed explanations.
+    It's worth to mention that currently I receive Upwork payments on my Turkish bank account, this is totally legal and has nothing with sanctions against Russia
+  </p>
+
+  <p class="col-span-2 text-sm text-center font-semibold">I plan to relocate from Russia completely this November 2022</p>
+</div>
+
+
+<div class="grid grid-cols-12 mb-3 gap-3">
+  <!-- LEFT COLUMN -->
+  <div class="col-span-4 mb-3">
+
+    <!-- SKILLS -->
+    {{ range ( slice "languages" "databases" "devops" "clouds" ) }}
+    {{ $skillGroup := . }}
+
+    {{/* getting title/level pairs array by key */}}
+    {{ $data := index $.Site.Data.cv $skillGroup }}
+    <div class="mb-3">
+      {{ partial "cv/skill_rating" (dict "grp" $skillGroup "data" $data) }}
+    </div>
+    {{ end }}
+    <!-- / SKILLS -->
+
+    <!-- HUMAN LANGS -->
+    <div class="mb-3">
+
+      {{ partial "cv/block_header" "Human languages" }}
+
+      <div class="flex flex-col">
+
+        {{ range $.Site.Data.cv.human_languages }}
+        <div class="flex flex-row justify-between">
+          <div class="text-sm font-semibold">{{ .title }}</div>
+          <div class="self-end text-sm">{{ .desc }}</div>
+          <!-- <div class="text-sm"><strong>{{ .title }}</strong>: {{ .desc }}</div> -->
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    <!-- / HUMAN LANGS -->
+
+    <!-- CONTACTS -->
+    <div class="mb-3">
+      {{ partial "cv/block_header" "Contacts" }}
+
+      <div class="flex flex-col">
+
+        {{ range $key, $val := $.Site.Data.cv.contacts }}
+        <div class="flex flex-row justify-between">
+          <div class="text-sm font-semibold">{{ $key }}</div>
+          <div class="self-end text-sm">{{ $val }}</div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+    <!-- / CONTACTS -->
+
+  </div>
+  <!-- / LEFT COLUMN -->
+
+  <div class="col-span-8 mb-3">
+
+    <!-- CLOJURE -->
+
+    {{ if eq "clojure" .Params.cvFor }}
+    <div class="mb-3">
+      {{ partial "cv/block_header" "How I choose to switch to Clojure" }}
+
+      <ul class="list-square list-inside text-sm">
+        <li>
+          I love Ruby, we are together for 10 years, and I'm glad with how it evolves etc.
+          But there's two huge problems with it.
+          The first one is 99% of contracts I had, were related to Ruby on Rails, and RoR use most of bad OOP practices.
+          It's ok if you need to create small MVP fast.
+          But after that, maintaining RoR app becomes a nightmare for the reasons above.
+          There's a solution for the problem: avoid RoR and use nice tiny microframeworks instead and Object Mapper instead of Active Record (RoR's killer feature) anti-pattern.
+          This approach I'm trying to sell to my clients, but almost nobody bought it.
+          Too hard to find the client who understand what RoR is a bad basement for the big project
+        </li>
+        <li>
+          So recently I started to review all the languages I heard of or had experience with, looking for the one that will make me happy again.
+          Most obvious choice was the Elixir, because it mimics Ruby and best parts of RoR in someway. But I decide to look further, looking for something <em>completely different.</em>
+          The next one was Go, but Go looks too strange for me.
+          I like the possibilities of Rust, how the code looks like, low-level nature etc. But Rust targets a bit different area than I'm focused at.
+          Many years ago I heard about Clojure, the legendary "Simple made easy" was very inspiring, and I even tried to write something, using Emacs+evil mode+CIDER, but I was not ready yet to switch.
+          For that time I already found amazing frontend Elm language, and I was really amazed <em>in practice</em> how immutability can reduce the pain I had with classical OOP approach.
+          And only after the horrible war began, and the need of look for new job and new life arose, I decided that Clojure's time is come, finally. I'd like to change the way I think and work with its help
+        </li>
+        <li>
+          My current Clojure's practical experience is limited, but I'm angry to learn, and choosing what to re-implement in Clojure. One of the ideas is to partly port RoR's <em>Spree e-commerce platform</em> in pair with <em>htmx</em> js library for frontend. Anyway, I believe in rule <em>"just build something!"</em>. Check my github soon :)
+        </li>
+      </ul>
+    </div>
+    {{ end }}
+
+
+    <!-- PRO SKILLS: IT -->
+    <div class="mb-3">
+      {{ partial "cv/block_header" "IT skills" }}
+
+      <ul class="list-square list-inside text-sm">
+        {{ range $.Site.Data.cv.pro_skills.it }}
+        <li><strong>{{ .title }}</strong>: {{ .desc | markdownify}}</li>
+        {{ end }}
+      </ul>
+    </div>
+    <!-- / PRO SKILLS: IT -->
+
+    <!-- PRO SKILLS: SOFT -->
+    <div class="mb-3">
+      {{ partial "cv/block_header" "Soft skills" }}
+
+      <ul class="list-square list-inside text-sm">
+        {{ range $.Site.Data.cv.pro_skills.soft }}
+        <li><strong>{{ .title }}</strong>: {{ .desc }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    <!-- / PRO SKILLS: SOFT -->
+
+    <!-- LOOKING FOR -->
+    <div class="mb-3">
+      {{ partial "cv/block_header" "My dream team" }}
+
+      <ul class="list-square list-inside text-sm">
+        {{ range (union $.Site.Data.cv.work_of_a_dream.conditions $.Params.additionalConditions)}}
+        <li>{{ . | markdownify }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    <!-- / LOOKING FOR -->
+
+    <!-- RELATED INTERESTS -->
+    <div class="mb-3">
+      {{ partial "cv/block_header" "Related interests" }}
+
+      <ul class="list-square list-inside text-sm">
+        {{ range $.Site.Data.cv.related_interests }}
+        <li><strong>{{ .title }}</strong>: {{ .desc | markdownify }}</li>
+        {{ end }}
+      </ul>
+    </div>
+    <!-- / LOOKING FOR -->
+
+  </div>
+</div>
+
+{{ end }}
