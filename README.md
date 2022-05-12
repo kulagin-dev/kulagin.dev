@@ -6,8 +6,11 @@ Repository of [my static website](https://ivan.kulagin.dev)
 
 **Primary**
 
+* [ ] migrate to tailwindcss
 * [ ] add lightbox for images ([this one?](https://github.com/noelboss/featherlight/))
-* [X] deploy with [Github actions](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
+* [ ] deploy with [Github actions](https://gohugo.io/hosting-and-deployment/hosting-on-github/)
+* [ ] fix tailwind css purging in development env, we don't need that
+* [ ] differentiate between [dev|prod assets processing](https://gohugo.io/hugo-pipes/postprocess/#css-purging-with-postcss) (bottom snippet)
 * [x] contacts (*2015-12-24*)
 * [x] instamotor about (*2015-12-24*)
 * [x] thumbs links (*2015-12-24*)
@@ -15,25 +18,26 @@ Repository of [my static website](https://ivan.kulagin.dev)
 
   **Secondary**
 
-* [ ] get rid of ``showcaseThumb`` variable, use index 0 unless defined
+* [ ] works: get rid of ``showcaseThumb`` variable, use index 0 unless defined
 * [ ] screenshot captions?
 * [ ] add books list
+* [ ] track if [this issue](https://github.com/gohugoio/hugo/issues/9730) fixed. solved by installing `nodejs` globally with homebrew.
 
 # Dependencies
 
-``asdf plugin add hugo nodejs ruby``
+``asdf plugin add hugo nodejs yarn``
 
 - [Hugo](http://gohugo.io/)
-- [Google Material Design Lite](http://www.getmdl.io/)
+- **(deprecated)** [Google Material Design Lite](http://www.getmdl.io/)
 
-# SHORT HUGO REMINDER
+# HUGO TIPS REMINDER
 
 - archetypes: defaults for each content type
 - ``content/[content type]`` - taken from dirname or ``type`` in FM. If not set, the value is “page”.
 - [Examples: Layout Lookup for Regular Pages](https://gohugo.io/templates/lookup-order/#examples-layout-lookup-for-regular-pages)
-- `$` has special significance in your templates. $ is set to the starting value of . (“the dot”) by default. This is a documented feature of Go text/template. This means you have access to the global context from anywhere. 
+- `$` has special significance in your templates. `$` is set to the starting value of `.` (“the dot”) by default. This is a documented feature of Go text/template. This means you have access to the global context from anywhere. 
 - ``{{- .Title -}}`` trim whitespace (works with ``{{- range ... -}}...{{- end --}}`` too
-- [Go Templates](https://pkg.go.dev/text/template) support {{/* and */}} to open and close a comment block. Nothing within that block will be rendered.
+- [Go Templates](https://pkg.go.dev/text/template) support `{{/*` and `*/}}` to open and close a comment block. Nothing within that block will be rendered.
 
 # package.json
 

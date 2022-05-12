@@ -1,15 +1,19 @@
 {
-  "name":            "qd3v-assets",
-  "description":     "Assets for https://ivan.kulagin.dev",
-  "author":          "Ivan Kulagin",
-  "version":         "0.2.0",
-  "private":         true,
-  "ignore":          [
+  "name": "qd3v-assets",
+  "description": "Assets for https://ivan.kulagin.dev",
+  "author": "Ivan Kulagin",
+  "version": "0.2.0",
+  "private": true,
+  "ignore": [
     "**/.*",
     "node_modules"
   ],
-  "dependencies":    {
+  "dependencies": {
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.13",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.24"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

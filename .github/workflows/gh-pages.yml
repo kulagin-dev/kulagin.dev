@@ -1,3 +1,11 @@
+---
+
+# Docs on 
+# hugo's GHA docs: https://gohugo.io/hosting-and-deployment/hosting-on-github/
+# actions-hugo: https://github.com/peaceiris/actions-hugo
+# actions-node: https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#publish-to-npmjs-and-gpr-with-yarn
+# actions-cache (already handled by setup-node?): https://github.com/actions/cache/blob/main/examples.md#node---yarn
+
 name: github pages
 
 on:
@@ -9,6 +17,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    
     steps:
       - uses: actions/checkout@v2
         with:
@@ -18,13 +29,22 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.96.0'
+          hugo-version: '0.98.0'
           extended: true # enable SASS support using extended Hugo build
 
-      - name: Build
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+          cache: 'yarn'
+      
+      # args: https://stackoverflow.com/a/69944063/1592582
+      - name: Install node modules
+        run: yarn install --immutable --immutable-cache --check-cache
+      - name: Hugo build
         run: hugo --minify
 
-       # !!! https://github.com/marketplace/actions/github-pages-action
+       # https://github.com/marketplace/actions/github-pages-action
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/deploy'

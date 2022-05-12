@@ -1,0 +1,128 @@
+---
+about: >
+
+  With extensive experience in the APIs design and building complex systems, I help people to deliver their products to customers regularly, ensuring the changes made won't break anything.
+  This of course involves creating deploy pipeline, create cloud environments, choosing the right tools for the right job.
+
+pro_skills:
+  soft:
+    - title: Self-organization/time management
+      desc: "Being freelancer for the whole of my life, planning and time-management is a must to master"
+    - title: Analytical abilities
+      desc: "Learn your and others mistakes, track success, make future decisions based on both"
+    - title: KISS
+      desc: "Don't overcomplicate/overengineer, split complex tasks on subtasks, manage one at the time"
+    - title: Creativity
+      desc: "When you experienced with your tools, you can do amazing things with them"
+    - title: Perseverance
+      desc: "There's always a way to do the thing, but if stuck, try to find another solution with team"
+    - title: Problem Solving
+      desc: "Formulate the problem, that is 80% of solution. Consult with pros, use other's expertise and become better professional"
+    - title: Angry to learn/Curiosity
+      desc: "The more you know, the more ways you can do the task. Always learn something, even unrelated to your main focus. It's worth it"
+
+  it:
+    - title: APIs
+      desc: "They are the facade of your system, hiding its internal complexity. Everyone wants this facade to be nice for others, and I'm helping people with that"
+    - title: Testing
+      desc: "I have a weighted approach of testing. You shouldn't overtest everything (at the beginning for sure), but you must be sure the critical parts work"
+    - title: Refactoring
+      desc: "This is huge topic, and only following best practices and carefulness lead to success. Sometimes this process takes a lot of time, even if you have detailed plan"
+    - title: Data parsing/normalizing
+      desc: "Probably my favourite types of tasks. I love data manipulations"
+    - title: Data scraping
+      desc: "Watching run logs of hundreds of simultaneous scraping connections really please my eyes"
+    - title: Tasks automation
+      desc: "As a programmer, you always have a mind/hands work to do. Automate repetitive tasks, but only after they become really annoying. Don't automate too early"
+    - title: Networking
+      desc: "Every developer should have experience with building own \"[Anton](https://youtu.be/eZTaNLfxTRU)\". Since the 2007, when I had two, and till now, when I have eight bare-metal servers in my house, I love to practice networking stuff"
+    - title: Clouds
+      desc: "As a freelancer I use clouds from the early AWS days, and my experience grow with each new client. There are huge amount of tools clouds provide, and I have been working with most popular of them. Sometimes building crazy things"
+
+work_of_a_dream:
+  conditions:
+    - "your developers teams are small and focused on vertical slice of application (for example shopping cart feature from UI, metrics to DB query optimizations)"
+    - "your team don't spend thousands of hours per year on endless daily meetings, the team have clear requirements and just work"
+    - "the #1 rule in your code is *low in coupling and high in cohesion*"
+    - "you love to write tests and that is easy for you, because you have low coupled, *almost atomic* building blocks"
+    - "code review is the only way code become merged to *main*"
+
+languages:
+  - title: Ruby
+    level: 5
+  - title: Clojure
+    level: 3
+  - title: Elm
+    level: 4
+  - title: PL/pgSQL
+    level: 4
+  - title: Java/Kotlin
+    level: 3
+  - title: "*sh"
+    level: 4
+  - title: Python
+    level: 3
+  - title: Elixir
+    level: 2
+  - title: Rust
+    level: 2
+  - title: Go
+    level: 2
+
+databases:
+  - title: PostgreSQL
+    level: 5
+  - title: MySQL
+    level: 4
+  - title: Redis
+    level: 4
+  - title: Elasticsearch
+    level: 2
+  - title: MongoDB
+    level: 2
+
+devops:
+  - title: Terraform
+    level: 5
+  - title: Ansible
+    level: 5
+  - title: Nomad/Vault/Consul
+    level: 4
+  - title: Bare-metal servers
+    level: 4
+
+clouds:
+  - title: Google Cloud
+    level: 5
+  - title: Heroku
+    level: 5
+  - title: AWS
+    level: 4
+  - title: Linode
+    level: 5
+
+# upwork: https://www.upwork.com/freelancers/~0152a409fcb6322ec2
+
+contacts:
+  website: https://kulagin.dev
+  telegram: "@ivan_kulagin"
+  github: "@qd3v"
+  twitter: "@kulagin_dev"
+  email: "job@kulagin.dev"
+
+
+human_languages:
+  - title: English
+    desc: "B2"
+  - title: Russian
+    desc: "Native"
+  - title: Sweden
+    desc: "Wish to learn, it's beautiful"
+  - title: Turkish
+    desc: "Required for relocation"
+
+related_interests:
+  - title: Microcontrollers
+    desc: "We live at the times when buying NY/Christmas garland is boring, when you have Arduino/NodeMcu v2 (which has WiFi module), 10x10 plates of ws2812B, and love to solder"
+  - title: GTD
+    desc: "Learning how to manage your own life, how brain works, how it tends to cheat you, etc is a key of success for freelancer"
