@@ -46,6 +46,7 @@ work_of_a_dream:
     - "the #1 rule in your code is *low in coupling and high in cohesion*"
     - "you love to write tests and that is easy for you, because you have low coupled, *almost atomic* building blocks"
     - "code review is the only way code become merged to *main*"
+    - "you located in US/Europe/Australia/Singapore"
 
 languages:
   - title: Ruby
