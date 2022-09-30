@@ -119,8 +119,8 @@ human_languages:
     desc: "Native"
   - title: Sweden
     desc: "Wish to learn, it's beautiful"
-  - title: Turkish
-    desc: "Required for relocation"
+#  - title: Turkish
+#    desc: "Required for relocation"
 
 related_interests:
   - title: Microcontrollers
